@@ -1,18 +1,17 @@
 
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import './App.css';
-
+import Header from "./header";
+import Main from "./main";
+import Message from "./message";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+      <>
+    <Header />
+    <Main />
+    <Message />
+      </>
 
-        <p>
-          Princigration Landing Page is under Maintenance. Please Check Back Later
-        </p>
-
-      </header>
-    </div>
   );
 }
 
