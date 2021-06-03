@@ -7,66 +7,63 @@ import {
     MDBContainer,
     MDBIcon,
     MDBNavbarToggler} from 'mdb-react-ui-kit';
+import * as https from "https";
+
 
 function Header() {
     return (
-        <header>
-            <MDBNavbar expand='lg' light bgColor='white' sticky>
-                <MDBContainer fluid>
-                    <MDBNavbarToggler
-                        aria-controls='navbarExample01'
-                        aria-expanded='false'
-                        aria-label='Toggle navigation'
-                    >
-                        <MDBIcon fas icon='bars' />
-                    </MDBNavbarToggler>
-                    <div className='collapse navbar-collapse' id='navbarExample01'>
-                        <MDBNavbarNav right className='mb-2 mb-lg-0'>
-                            <MDBNavbarItem active>
-                                <MDBNavbarLink aria-current='page' href='#'>
-                                    Home
-                                </MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                <MDBNavbarLink href='#'>Features</MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                <MDBNavbarLink href='#'>Pricing</MDBNavbarLink>
-                            </MDBNavbarItem>
-                            <MDBNavbarItem>
-                                <MDBNavbarLink href='#'>About</MDBNavbarLink>
-                            </MDBNavbarItem>
-                        </MDBNavbarNav>
-                    </div>
-                </MDBContainer>
-            </MDBNavbar>
+        <>
+            <header>
 
-            <div
-                className='p-5 text-center bg-image'
-                style={{ backgroundImage: "url(IMG_2440.jpg)", height: 600 }}
-            >
-                <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-                    <div className='d-flex justify-content-center align-items-center h-100'>
-                        <div className='text-white'>
-                            <h1 className='mb-3'>Heading</h1>
-                            <h4 className='mb-3'>Subheading</h4>
-                            <a className='btn btn-outline-light btn-lg' href='#!' role='button'>
-                                Call to action
-                            </a>
+                <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-green navbar-scroll">
+                    <div className="container">
+
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto">
+                                <li className="nav-item">
+                                    <a className="nav-link active" aria-current="page" href="#intro">Home</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#about_princigration">About</a>
+                                </li>
+
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+
                         </div>
                     </div>
-                </div>
-            </div>
+                </nav>
 
-            <p className='mt-4'>Scroll down</p>
-            <p>Scroll down</p>
-            <p>Scroll down</p>
-            <p>Scroll down</p>
-            <p>Scroll down</p>
-            <p>Scroll down</p>
-            <p>Scroll down</p>
-            <p>Scroll down</p>
-        </header>
+                <section>
+
+                    <div id="intro" className="text-center bg-image vh-100"
+                         style={{backgroundImage: 'url(IMG_2441.jpg)'}}>
+                        <div className="mask" style={{backgroundColor: "rgba(255, 255, 255, 0.7)"}}>
+                            <div className="d-flex justify-content-center align-items-center h-100 mt-4">
+                                <div className="">
+                                    <h1 className="display-2 mb-4 green-font"><strong>Princigration</strong></h1>
+                                    <h5 className="text-uppercase mb-5">
+                                        <mark style={{backgroundColor: "rgb(115,248,67)"}}>Principle &#8747; Integration
+                                        </mark>
+                                    </h5>
+                                    <a href="#about" className="btn btn-floating btn-lg btn-dark"><i
+                                        className="fas fa-angle-down"
+                                        aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+            </header>
+
+
+
+
+        </>
     );
 }
 
