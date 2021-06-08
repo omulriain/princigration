@@ -27,7 +27,7 @@ return(
                         <div className="col-md-4 mb-4 mb-md-0">
                             <div className="card hover-shadow-light">
                                 <div className="card-body">
-                                    <i className="fas fa-laptop fa-3x mt-3 text-dark"></i>
+                                    <i className="fas fa-database fa-3x mt-3 text-dark"></i>
                                     <h5 className="card-title my-4 green-font">Data-Centric</h5>
                                     <p className="card-text mb-3 green-font">
                                         Beyond Data-Driven, we are Data Centric
@@ -49,7 +49,7 @@ return(
                         <div className="col-md-4 mb-0">
                             <div className="card hover-shadow-light">
                                 <div className="card-body">
-                                    <i className="fas fa-pencil-alt fa-3x mt-3 text-dark"></i>
+                                    <i className="fas fa-list-ol fa-3x mt-3 text-dark"></i>
                                     <h5 className="card-title my-4 green-font">Test Driven</h5>
                                     <p className="card-text mb-3 green-font">
                                         After defining the data, scenarios and use cases feed tests.
