@@ -38,7 +38,7 @@ return(
                         <div className="col-md-4 mb-4 mb-md-0">
                             <div className="card hover-shadow-light" style={{backgroundColor: "#82f77e"}}>
                                 <div className="card-body">
-                                    <i className="fas fa-code fa-3x mt-3 text-dark"></i>
+                                    <i className="fas fa-code-branch fa-3x mt-3 text-dark"></i>
                                     <h5 className="card-title my-4 text-dark">Implementation Specialists</h5>
                                     <p className="card-text mb-3">
                                         Our consultants are experts, with ground up development and integration experience.
