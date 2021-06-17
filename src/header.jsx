@@ -26,7 +26,12 @@ function Header() {
                                 <li className="nav-item">
                                     <a className="nav-link" href="#about_princigration">About</a>
                                 </li>
-
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#experience">Experience</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#projects">Projects</a>
+                                </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#contact">Contact</a>
                                 </li>
@@ -40,7 +45,7 @@ function Header() {
 
                     <div id="intro" className="text-center bg-image vh-100"
                          style={{backgroundImage: 'url(IMG_2441.jpg)'}}>
-                        <div className="mask" style={{backgroundColor: "rgba(255, 255, 255, 0.7)"}}>
+                        <div className="mask" style={{backgroundColor: "rgba(255, 255, 255, 0.65)"}}>
                             <div className="d-flex justify-content-center align-items-center h-100 mt-4">
                                 <div className="">
                                     <h1 className="display-2 mb-4 green-font"><strong>Princigration</strong></h1>

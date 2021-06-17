@@ -1,5 +1,4 @@
 import React from "react";
-import ContactMe from "./contactMe";
 
 function Main() {
 
@@ -59,13 +58,6 @@ return(
                         </div>
                     </div>
                 </section>
-            </div>
-
-
-
-            <div className="container my-5">
-
-            <ContactMe />
             </div>
         </main>
     </>

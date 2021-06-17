@@ -4,6 +4,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .card.hover-shadow-light,
 .hover-shadow-light {
   transition: all 0.5s ease-in-out;
@@ -11,24 +12,34 @@ code {
 
 .card.hover-shadow-light:hover,
 .hover-shadow-light:hover {
-  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease-in-out;
 }
 
 .blockquote-footer:before {
   content: none;
 }
-.green-font {
-  color: green;
-}
-.border-left {
-  border-left: 3px solid #facc62 !important;
-}
-.bg-green {
-  background-color: green !important;
 
-}
 .nav-pills .nav-link.active,
 .nav-pills .nav-item.show .nav-link {
   background-color: #78a74f;
+}
+
+.basic-padding
+{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.basic-text-align
+{
+  text-align: center;
+}
+
+.green-font {
+  color: green;
+}
+
+.bg-green {
+  background-color: green;
 }

@@ -3,73 +3,32 @@ import React from "react";
 function MyProjects(){
     return (
         <>
-            <section>
-                <h3 className="text-center mb-5">My projects</h3>
+        <hr className="my-5"/>
+            <section id="projects">
+                <h3 className="text-center mb-5 green-font">Our Projects</h3>
 
-                <p className="text-center mb-5 mx-auto w-responsive">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quas, eos officia
-                    maiores ipsam ipsum dolores reiciendis ad voluptas, animi obcaecati adipisci sapiente
-                    mollitia? Autem delectus quod accusamus tempora, aperiam minima assumenda deleniti.
+                <p className="text-center mb-5 mx-auto w-responsive green-font">
+                    Princigration has a coveted collection of top-tier projects implementing our Principles, while achieving real world success.
                 </p>
 
-                <div className="lightbox">
+                <div className="lightbox basic-padding">
                     <div className="row">
                         <div className="col-md-4 mb-4">
-                            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(63).jpg"
-                                 data-mdb-img="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(63).jpg"
+                            <img src="Screenshot-153207.png"
+                                 data-mdb-img="Screenshot-153207png"
                                  alt="Lightbox image 1"
                                  className="w-100 shadow-1-strong rounded"/>
                         </div>
                         <div className="col-md-4 mb-4">
-                            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(66).jpg"
-                                 data-mdb-img="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(66).jpg"
+                            <img src="Screenshot-152001.png"
+                                 data-mdb-img="Screenshot-152001.png"
                                  alt="Lightbox image 2"
                                  className="w-100 shadow-1-strong rounded"/>
                         </div>
                         <div className="col-md-4 mb-4">
-                            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(65).jpg"
-                                 data-mdb-img="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(65).jpg"
+                            <img src="Screenshot-153504.png"
+                                 data-mdb-img="Screenshot-153504.png"
                                  alt="Lightbox image 3"
-                                 className="w-100 shadow-1-strong rounded"/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-4 mb-4">
-                            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(67).jpg"
-                                 data-mdb-img="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(67).jpg"
-                                 alt="Lightbox image 4"
-                                 className="w-100 shadow-1-strong rounded"/>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(68).jpg"
-                                 data-mdb-img="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(68).jpg"
-                                 alt="Lightbox image 5"
-                                 className="w-100 shadow-1-strong rounded"/>
-                        </div>
-                        <div className="col-md-4 mb-4">
-                            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(64).jpg"
-                                 data-mdb-img="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(64).jpg"
-                                 alt="Lightbox image 6"
-                                 className="w-100 shadow-1-strong rounded"/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-4">
-                            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(69).jpg"
-                                 data-mdb-img="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(69).jpg"
-                                 alt="Lightbox image 7"
-                                 className="w-100 shadow-1-strong rounded"/>
-                        </div>
-                        <div className="col-md-4">
-                            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(59).jpg"
-                                 data-mdb-img="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(59).jpg"
-                                 alt="Lightbox image 8"
-                                 className="w-100 shadow-1-strong rounded"/>
-                        </div>
-                        <div className="col-md-4">
-                            <img src="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(70).jpg"
-                                 data-mdb-img="https://mdbootstrap.com/img/Mockups/Lightbox/Original/img%20(70).jpg"
-                                 alt="Lightbox image 9"
                                  className="w-100 shadow-1-strong rounded"/>
                         </div>
                     </div>
