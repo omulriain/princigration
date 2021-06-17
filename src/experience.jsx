@@ -19,25 +19,25 @@ function Experience(){
                                  style={{backgroundColor: "#73F843", width: "98%"}}
                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p className="font-weight-bold pt-4 mt-3 mb-2">Python</p>
+                        <p className="font-weight-bold pt-4 mt-3 mb-2">Python and Spark Data</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
                                  style={{backgroundColor: "#73F843", width: "100%"}}
                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p className="font-weight-bold pt-4 mt-3 mb-2">Java</p>
+                        <p className="font-weight-bold pt-4 mt-3 mb-2">Relational and NOSQL</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
                                  style={{backgroundColor: "#73F843", width: "95%"}}
                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p className="font-weight-bold pt-4 mt-3 mb-2">Spring</p>
+                        <p className="font-weight-bold pt-4 mt-3 mb-2">Data Governance</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
                                  style={{backgroundColor: "#73F843", width: "97%" }}
                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p className="font-weight-bold pt-4 mt-3 mb-2">Data Management</p>
+                        <p className="font-weight-bold pt-4 mt-3 mb-2">Meta-data Management</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
                                  style={{backgroundColor: "#73F843", width: "100%" }}
@@ -52,12 +52,12 @@ function Experience(){
                                  style={{backgroundColor: "#73F843", width: "90%"}}
                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p className="font-weight-bold pt-4 mt-3 mb-2">JavaScript</p>
+                        <p className="font-weight-bold pt-4 mt-3 mb-2">React</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
                                  style={{backgroundColor: "#73F843", width: "95%"}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p className="font-weight-bold pt-4 mt-3 mb-2">CSS3</p>
+                        <p className="font-weight-bold pt-4 mt-3 mb-2">Material Design</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
                                  style={{backgroundColor: "#73F843", width: "83%"}}
@@ -79,7 +79,7 @@ function Experience(){
                         </div>
                         <div className="col-md-4 mb-0">
                         <h5 className="text-uppercase mb-5 green-font">Cloud</h5>
-                        <p className="font-weight-bold pt-4 mt-3 mb-2">Web Services</p>
+                        <p className="font-weight-bold pt-4 mt-3 mb-2">Amazon Web Services</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
                                  style={{backgroundColor: "#73F843", width: "88%" }}
@@ -92,19 +92,19 @@ function Experience(){
                                  style={{backgroundColor: "#73F843", width: "92%" }}
                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p className="font-weight-bold pt-4 mt-3 mb-2">Amazon Cloud Platform</p>
+                        <p className="font-weight-bold pt-4 mt-3 mb-2">Container Management</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
                                  style={{backgroundColor: "#73F843", width: "90%" }}
                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p className="font-weight-bold pt-4 mt-3 mb-2">Data Visualization</p>
+                        <p className="font-weight-bold pt-4 mt-3 mb-2">Kubernetes</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
                                  style={{backgroundColor: "#73F843", width: "95%" }}
                                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p className="font-weight-bold pt-4 mt-3 mb-2">Enterprise Architecture</p>
+                        <p className="font-weight-bold pt-4 mt-3 mb-2">Continuous Integration and Delivery</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
                                  style={{backgroundColor: "#73F843", width: "93%" }}
