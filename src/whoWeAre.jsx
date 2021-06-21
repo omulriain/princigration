@@ -7,8 +7,7 @@ function WhoWeAre() {
             <section className="text-center" id="people">
                 <h3 className="mb-5 green-font">People</h3>
                 <p className="text-center mb-5 mx-auto w-responsive green-font">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Princigration is a team of dedicated and professional developers having the technical skills to suit any of your needs.
                 </p>
             </section>
         </>
