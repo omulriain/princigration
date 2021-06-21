@@ -1,7 +1,9 @@
-body { font-family: Roboto, Helvetica, Arial, sans-serif; }
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -25,14 +27,22 @@ code {
   background-color: #78a74f;
 }
 
-.basic-padding
-{
+.basic-padding {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.basic-text-align
+.padding-left
 {
+  padding-left: 250px;
+}
+
+.padding-right
+{
+  padding-right: 135px;
+}
+
+.basic-text-align {
   text-align: center;
 }
 
