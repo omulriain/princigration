@@ -17,7 +17,7 @@ function ContactMe() {
                     </li>
                     <li>
                         <i className="fas fa-envelope fa-2x text-dark"></i>
-                        <p>john@princigration.com</p>
+                        <p>contact@princigration.com</p>
                     </li>
                 </ul>
             </section>

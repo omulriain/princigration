@@ -14,7 +14,7 @@ function WhoWeAre() {
                     <Card className="green-font">
                         <Card.Header>
                             <Accordion.Toggle as={Button} variant="light" eventKey="0">
-                                Employee
+                                John Ryan - Chief Data Officer
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
@@ -24,7 +24,7 @@ function WhoWeAre() {
                     <Card className="green-font">
                         <Card.Header>
                             <Accordion.Toggle as={Button} variant="light" eventKey="1">
-                                Employee
+                                Jesse Sites - Web Developer
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">
@@ -34,7 +34,7 @@ function WhoWeAre() {
                     <Card className="green-font">
                         <Card.Header>
                             <Accordion.Toggle as={Button} variant="light" eventKey="2">
-                                Employee
+                                Sam Dawson - Graphic Artist and Digital Media
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="2">

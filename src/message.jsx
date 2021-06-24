@@ -10,7 +10,7 @@ function Message() {
                             <h2 className="mb-4">Want to learn how we can help?</h2>
                             <h5 className="mb-0">Just send us an email:</h5>
                             <p></p>
-                            <h5 className="mb-0">john@princigration.com</h5>
+                            <h5 className="mb-0">contact@princigration.com</h5>
                             <img
                                 src="princigration logo emerald green Vfinal2 no back.png"
                                 height="75"
