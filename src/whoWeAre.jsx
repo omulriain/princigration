@@ -10,10 +10,10 @@ function WhoWeAre() {
                 <p className="text-center mb-5 mx-auto w-responsive green-font">
                     Princigration is a team of dedicated and professional developers having the technical skills to suit any of your needs.
                 </p>
-                <Accordion defaultActiveKey="0">
+                <Accordion>
                     <Card className="green-font">
                         <Card.Header>
-                            <Accordion.Toggle as={Button} className="width-fixed" variant="light" eventKey="0">
+                            <Accordion.Toggle as={Button} className="width-fixed" variant="light" eventKey="0" >
                                 John Ryan - Chief Data Officer
                             </Accordion.Toggle>
                         </Card.Header>
