@@ -30,7 +30,7 @@ function WhoWeAre() {
                                     /></li>
                                     <li class="list-group-item"><container className="green-font"><h3>John J. Ryan III</h3><p>John Ryan has 20 years in Software and Data Engineering. </p></container></li>
                                     <li class="list-group-item"><div className="fixed-action-button"><button type="button" className="btn">
-                                        <a href={ResumeRyan} className="green-font"><h3>
+                                        <a href="https://princigration.s3.us-west-2.amazonaws.com/website/John_Ryan_2021-06-22.pdf" className="green-font"><h3>
                                             Resume</h3></a></button></div></li>
                                 </ul>
                             </Card.Body>
