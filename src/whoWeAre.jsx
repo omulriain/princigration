@@ -1,5 +1,7 @@
 import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
+import ResumeSites from "./pdfs/resume_sites.pdf";
+import ResumeRyan from "./pdfs/John_Ryan_2021-06-22.pdf";
 
 function WhoWeAre() {
     return (
@@ -28,7 +30,7 @@ function WhoWeAre() {
                                     /></li>
                                     <li class="list-group-item"><container className="green-font"><h3>John J. Ryan III</h3><p>John Ryan has 20 years in Software and Data Engineering. </p></container></li>
                                     <li class="list-group-item"><div className="fixed-action-button"><button type="button" className="btn">
-                                        <a href="John_Ryan_2021-06-22.pdf" className="green-font"><h3>
+                                        <a href={ResumeRyan} className="green-font"><h3>
                                             Resume</h3></a></button></div></li>
                                 </ul>
                             </Card.Body>
@@ -49,7 +51,7 @@ function WhoWeAre() {
                                         alt="jesse sites"
                                         loading="lazy"
                                     /></li>
-                                    <li class="list-group-item"><container className="green-font"><h3>Description</h3><p>
+                                    <li class="list-group-item"><container className="green-font"><h3>Jesse S. Sites</h3><p>
                                         I am a computer programming student with 3 years of experience in the field of information technology as a student worker
                                         at Tarleton State University,
                                         where I have developed my skills as a computer software and programming specialist.
@@ -63,7 +65,7 @@ function WhoWeAre() {
                                     <li class="list-group-item"><container className="green-font"><h3>Skills</h3><p>&bull; HTML</p><p>&bull; CSS</p><p>&bull; JS</p>
                                         <p>&bull; MDB</p><p>&bull; React</p><p>&bull; Node.js</p><p>&bull; Git/GitHub</p></container></li>
                                     <li class="list-group-item"><div className="fixed-action-button"><button type="button" className="btn">
-                                        <a href="resume_sites.pdf" className="green-font"><h3>
+                                        <a href={ResumeSites} className="green-font"><h3>
                                             Resume</h3></a></button></div></li>
                                 </ul>
                             </Card.Body>
