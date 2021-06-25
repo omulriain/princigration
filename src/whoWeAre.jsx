@@ -65,7 +65,7 @@ function WhoWeAre() {
                                     <li class="list-group-item"><container className="green-font"><h3>Skills</h3><p>&bull; HTML</p><p>&bull; CSS</p><p>&bull; JS</p>
                                         <p>&bull; MDB</p><p>&bull; React</p><p>&bull; Node.js</p><p>&bull; Git/GitHub</p></container></li>
                                     <li class="list-group-item"><div className="fixed-action-button"><button type="button" className="btn">
-                                        <a href={ResumeSites} className="green-font"><h3>
+                                        <a href="https://princigration.s3.us-west-2.amazonaws.com/website/resume_sites.pdf" className="green-font"><h3>
                                             Resume</h3></a></button></div></li>
                                 </ul>
                             </Card.Body>
