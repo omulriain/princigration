@@ -32,6 +32,14 @@ code {
   padding-right: 20px;
 }
 
+.basic-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.width-fixed {
+  width: 300px;
+}
+
 .basic-text-align {
   text-align: center;
 }
@@ -42,4 +50,9 @@ code {
 
 .bg-green {
   background-color: green;
+}
+
+.invis-bullet-compensation {
+  position: relative;
+  right: 15px;
 }
