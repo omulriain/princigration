@@ -21,16 +21,14 @@ function WhoWeAre() {
                             <Card.Body>
                                 <ul class="list-group-flush invis-bullet-compensation">
                                     <li class="list-group-item"><img className="rounded-4 border border-success basic-margin-bottom"
-                                        src="john_ryan.jpg"
+                                        src="13_lb_striper.jpg"
                                         height="250"
                                         alt="john ryan"
                                         loading="lazy"
                                     /></li>
-                                    <li class="list-group-item"><container className="green-font"><h3>Description</h3><p>Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p></container></li>
-                                    <li class="list-group-item"><container className="green-font"><h3>Skills</h3><p>&bull;</p><p>&bull;</p><p>&bull;</p></container></li>
+                                    <li class="list-group-item"><container className="green-font"><h3>John J. Ryan III</h3><p>John Ryan has 20 years in Software and Data Engineering. </p></container></li>
                                     <li class="list-group-item"><div className="fixed-action-button"><button type="button" className="btn">
-                                        <a href="resume_ryan.pdf" className="green-font"><h3>
+                                        <a href="John_Ryan_2021-06-22.pdf" className="green-font"><h3>
                                             Resume</h3></a></button></div></li>
                                 </ul>
                             </Card.Body>
@@ -79,20 +77,7 @@ function WhoWeAre() {
                         </Card.Header>
                         <Accordion.Collapse eventKey="2">
                             <Card.Body>
-                                <ul class="list-group-flush invis-bullet-compensation">
-                                    <li class="list-group-item"><img className="rounded-4 border border-success basic-margin-bottom"
-                                        src="sam_dawnson.jpg"
-                                        height="250"
-                                        alt="sam dawson"
-                                        loading="lazy"
-                                    /></li>
-                                    <li class="list-group-item"><container className="green-font"><h3>Description</h3><p>Contrary to popular belief, Lorem Ipsum is not simply random text.
-                                        It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p></container></li>
-                                    <li class="list-group-item"><container className="green-font"><h3>Skills</h3><p>&bull;</p><p>&bull;</p><p>&bull;</p></container></li>
-                                    <li class="list-group-item"><div className="fixed-action-button"><button type="button" className="btn">
-                                        <a href="resume_dawson.pdf" className="green-font"><h3>
-                                            Resume</h3></a></button></div></li>
-                                </ul>
+
                             </Card.Body>
                         </Accordion.Collapse>
                     </Card>
