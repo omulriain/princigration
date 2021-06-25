@@ -1,7 +1,9 @@
-body { font-family: Roboto, Helvetica, Arial, sans-serif; }
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -25,14 +27,20 @@ code {
   background-color: #78a74f;
 }
 
-.basic-padding
-{
+.basic-padding {
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.basic-text-align
-{
+.basic-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.width-fixed {
+  width: 300px;
+}
+
+.basic-text-align {
   text-align: center;
 }
 
@@ -42,4 +50,9 @@ code {
 
 .bg-green {
   background-color: green;
+}
+
+.invis-bullet-compensation {
+  position: relative;
+  right: 15px;
 }
