@@ -7,7 +7,7 @@ function Experience() {
             <section id={"experience"}>
                 <h3 className="mb-5 green-font text-center">Experience</h3>
                 <div className="row basic-padding text-center">
-                    <div className="col-md-4 mb-4 mb-md-0">
+                    <div className="col-md-4 mb-4 mb-md-0 basic-padding-top">
                         <h5 className="text-uppercase mb-5 green-font">Data</h5>
                         <p className="font-weight-bold pt-4 mt-3 mb-2">SQL</p>
                         <div className="progress">
@@ -40,7 +40,7 @@ function Experience() {
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div className="col-md-4 mb-4 mb-md-0">
+                    <div className="col-md-4 mb-4 mb-md-0 basic-padding-top">
                         <h5 className="text-uppercase mb-5 green-font">Front End</h5>
                         <p className="font-weight-bold pt-4 mt-3 mb-2">C#</p>
                         <div className="progress">
@@ -72,7 +72,7 @@ function Experience() {
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div className="col-md-4 mb-0">
+                    <div className="col-md-4 mb-0 basic-padding-top">
                         <h5 className="text-uppercase mb-5 green-font">Cloud</h5>
                         <p className="font-weight-bold pt-4 mt-3 mb-2">Amazon Web Services</p>
                         <div className="progress">

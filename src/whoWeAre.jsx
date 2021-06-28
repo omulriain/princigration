@@ -1,4 +1,3 @@
-  
 import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
 
@@ -15,7 +14,7 @@ function WhoWeAre() {
                     <Card className="green-font">
                         <Card.Header>
                             <Accordion.Toggle as={Button} className="width-fixed" variant="light" eventKey="0">
-                                John Ryan - Chief Data Officer
+                                <h6>John Ryan - Chief Data Officer</h6>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
@@ -38,7 +37,7 @@ function WhoWeAre() {
                     <Card>
                         <Card.Header>
                             <Accordion.Toggle as={Button} className="width-fixed" variant="light" eventKey="1">
-                                Jesse Sites - Web Developer
+                                <h6>Jesse Sites - Web Developer</h6>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">
@@ -61,8 +60,6 @@ function WhoWeAre() {
                                         I now create web development solutions for my clients utilizing my knowledge gained from Texas State Technical College,
                                         my new place of study, and from Princigration itself.
                                     </p></container></li>
-                                    <li class="list-group-item"><container className="green-font"><h3>Skills</h3><p>&bull; HTML</p><p>&bull; CSS</p><p>&bull; JS</p>
-                                        <p>&bull; MDB</p><p>&bull; React</p><p>&bull; Node.js</p><p>&bull; Git/GitHub</p></container></li>
                                     <li class="list-group-item"><div className="fixed-action-button"><button type="button" className="btn">
                                         <a href="https://princigration.s3.us-west-2.amazonaws.com/website/resume_sites.pdf" className="green-font"><h3>
                                             Resume</h3></a></button></div></li>
@@ -73,7 +70,7 @@ function WhoWeAre() {
                     <Card className="green-font">
                         <Card.Header>
                             <Accordion.Toggle as={Button} className="width-fixed" variant="light" eventKey="2">
-                                Sam Dawson - Graphic and Digital Media Artist
+                                <h6>Sam Dawson - Graphic and Digital Media Artist</h6>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="2">
