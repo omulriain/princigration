@@ -37,7 +37,7 @@ function WhoWeAre() {
                     <Card>
                         <Card.Header>
                             <Accordion.Toggle as={Button} className="width-fixed" variant="light" eventKey="1">
-                                <h6>Jesse Sites - Web Developer</h6>
+                                <h6>Jesse Sites - Independent Web Developer</h6>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">
@@ -56,7 +56,7 @@ function WhoWeAre() {
                                         I interned at TIAER (A Tarleton State University research facility) for 2 years,
                                         and was a Student Tech for Classroom and Lab Support for 1 year.
                                         I have also had about 2 years of experience in the service industry before I started college,
-                                        where I have fostered my ability to connect with people in the field.
+                                        where I have fostered my ability to connect with people in the workplace.
                                         I now create web development solutions for my clients utilizing my knowledge gained from Texas State Technical College,
                                         my new place of study, and from Princigration itself.
                                     </p></container></li>
@@ -73,11 +73,6 @@ function WhoWeAre() {
                                 <h6>Sam Dawson - Graphic and Digital Media Artist</h6>
                             </Accordion.Toggle>
                         </Card.Header>
-                        <Accordion.Collapse eventKey="2">
-                            <Card.Body>
-
-                            </Card.Body>
-                        </Accordion.Collapse>
                     </Card>
                 </Accordion>
             </section>
