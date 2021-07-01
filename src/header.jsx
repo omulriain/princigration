@@ -49,7 +49,7 @@ function Header() {
                                         <mark style={{ backgroundColor: "rgb(115,248,67)" }}>Principle &#8747; Integration
                                         </mark>
                                     </h5>
-                                    <a href="/about#about_princigration" className="btn btn-floating btn-lg btn-dark"> <i
+                                    <a href="/#about_princigration" className="btn btn-floating btn-lg btn-dark"> <i
                                         className="fas fa-angle-down"
                                         aria-hidden="true"></i></a>
                                 </div>

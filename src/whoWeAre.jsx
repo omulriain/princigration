@@ -10,7 +10,7 @@ function WhoWeAre() {
                 <p className="text-center mb-5 mx-auto w-responsive green-font">
                     Princigration is a team of dedicated and professional developers having the technical skills to suit any of your needs.
                 </p>
-                <Accordion >
+                <Accordion className="basic-padding-bottom">
                     <Card className="green-font">
                         <Card.Header>
                             <Accordion.Toggle as={Button} className="width-fixed" variant="light" eventKey="0">
@@ -53,10 +53,6 @@ function WhoWeAre() {
                                         I am a computer programming student with 3 years of experience in the field of information technology as a student worker
                                         at Tarleton State University,
                                         where I have developed my skills as a computer software and programming specialist.
-                                        I interned at TIAER (A Tarleton State University research facility) for 2 years,
-                                        and was a Student Tech for Classroom and Lab Support for 1 year.
-                                        I have also had about 2 years of experience in the service industry before I started college,
-                                        where I have fostered my ability to connect with people in the workplace.
                                         I now create web development solutions for my clients utilizing my knowledge gained from Texas State Technical College,
                                         my new place of study, and from Princigration itself.
                                     </p></container></li>
