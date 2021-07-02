@@ -44,12 +44,12 @@ function Header() {
                         <div className="mask" style={{ backgroundColor: "rgba(230, 255, 230, 0.65)" }}>
                             <div className="d-flex justify-content-center align-items-center h-100 mt-4">
                                 <div className="">
-                                    <h1 className="display-2 mb-4 green-font"><strong>Princigration</strong></h1>
+                                    <h1 className="display-2 mb-4 green-font fw-bold"><strong>Princigration</strong></h1>
                                     <h5 className="text-uppercase mb-5">
                                         <mark style={{ backgroundColor: "rgb(115,248,67)" }}>Principle &#8747; Integration
                                         </mark>
                                     </h5>
-                                    <a href="/about#about_princigration" className="btn btn-floating btn-lg btn-dark"> <i
+                                    <a href="/#about_princigration" className="btn btn-floating btn-lg btn-dark"> <i
                                         className="fas fa-angle-down"
                                         aria-hidden="true"></i></a>
                                 </div>

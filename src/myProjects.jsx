@@ -10,7 +10,7 @@ function MyProjects() {
                 <p className="text-center mb-5 mx-auto w-responsive green-font">
                     Princigration has a coveted collection of top-tier projects implementing our Principles, while achieving real world success.
                 </p>
-                <div className="row basic-padding">
+                <div className="row basic-padding text-center">
                     <div className="col-md-4 mb-4 mb-md-0">
                         <div className="card hover-shadow-light">
                             <div className="card-body">
