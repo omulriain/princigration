@@ -50,9 +50,7 @@ function WhoWeAre() {
                                         loading="lazy"
                                     /></li>
                                     <li class="list-group-item"><container className="green-font"><h3>Jesse S. Sites</h3><p>
-                                        I am a computer programming student with 3 years of experience in the field of information technology as a student worker
-                                        at Tarleton State University,
-                                        where I have developed my skills as a computer software and programming specialist.
+                                        I am a computer programming student with 3 years of experience in the field of information technology at Tarleton State University.
                                         I now create web development solutions for my clients utilizing my knowledge gained from Texas State Technical College,
                                         my new place of study, and from Princigration itself.
                                     </p></container></li>

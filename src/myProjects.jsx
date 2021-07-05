@@ -6,7 +6,6 @@ function MyProjects() {
             <hr className="my-5" />
             <section id="projects">
                 <h3 className="text-center mb-5 green-font">Recent Projects</h3>
-
                 <p className="text-center mb-5 mx-auto w-responsive green-font">
                     Princigration has a coveted collection of top-tier projects implementing our Principles, while achieving real world success.
                 </p>

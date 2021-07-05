@@ -4,7 +4,7 @@ function ContactMe() {
     return (
         <>
             <hr className="my-5" />
-            <section className="text-center mb-5" id={"contact"}>
+            <section className="text-center" id={"contact"}>
                 <h3 className="mb-5 green-font">Contact Us</h3>
                 <ul className="list-unstyled">
                     <li>

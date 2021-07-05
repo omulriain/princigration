@@ -4,7 +4,7 @@ function Header() {
     return (
         <>
             <header>
-                <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-green navbar-scroll">
+                <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-green">
                     <div className="container">
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <a class="navbar-brand mt-2 mt-lg-0" href="#intro">

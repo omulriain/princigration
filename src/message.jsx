@@ -6,7 +6,7 @@ function Message() {
         <>
             <section>
                 <div style={{ backgroundColor: "green" }}>
-                    <Link to="/adminLogin"><button type="button" class="btn btn-success btn-lg btn-position">Administrator Login</button></Link>
+                    <Link to="/adminLogin"><button type="button" class="btn btn-success btn-lg admin-btn-position">Administrator Login</button></Link>
                     <div className="d-flex align-items-center justify-content-center h-100 py-5">
                         <div className="text-center text-white my-3">
                             <h2 className="mb-4">Want to learn how we can help?</h2>
