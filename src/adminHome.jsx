@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Nav, NavDropdown } from "react-bootstrap";
 import { MDBCollapse, MDBBtn } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
+import { withAuthenticator } from '@aws-amplify/ui-react';
 
 function AdminHome() {
     const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
@@ -50,4 +51,4 @@ function AdminHome() {
         </>
     );
 }
-export default AdminHome;
+export default withAuthenticator(AdminHome);
