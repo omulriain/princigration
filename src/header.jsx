@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
     return (
@@ -37,6 +38,7 @@ function Header() {
                             </ul>
                         </div>
                     </div>
+                    <Link to="/adminLogin"><button type="button" class="btn btn-success btn-lg admin-btn-margin">Admin</button></Link>
                 </nav>
                 <section>
                     <div id="intro" className="text-center bg-image vh-100"

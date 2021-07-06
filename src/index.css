@@ -80,10 +80,9 @@ h1, h2, h3, h4, h5, h6, section, header {
   right: 15px;
 }
 
-.admin-btn-position {
-  position: relative;
-  top: 310px;
-  left: 15px;
+.admin-btn-margin {
+margin-left: 15px;
+margin-right: 15px;
 }
 
 .admin-logo {
