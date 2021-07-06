@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <>
             <header>
                 <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-green">
+                    <Link to="/adminHome"><button type="button" class="btn btn-success btn-lg login-btn-space">Admin Login</button></Link>
                     <div className="container">
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <a class="navbar-brand mt-2 mt-lg-0" href="#intro">
