@@ -34,7 +34,7 @@ function AdminTraffic() {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="2">
-                                <Link to="/adminTraffic">
+                                    <Link to="/adminTraffic">
                                         <h6 className="text-dark">Traffic</h6>
                                     </Link>
                                 </Nav.Link>
@@ -71,7 +71,7 @@ function AdminTraffic() {
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-outline datepicker">
-                                            <input type="text" class="form-control" id="exampleDatepicker1" data-toggle="datepicker"/>
+                                            <input type="text" class="form-control" id="exampleDatepicker1" data-toggle="datepicker" />
                                             <label for="exampleDatepicker1" class="form-label">Custom Date</label>
                                         </div>
                                     </div>

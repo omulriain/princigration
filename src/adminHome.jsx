@@ -34,7 +34,7 @@ function AdminHome() {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="2">
-                                <Link to="/adminTraffic">
+                                    <Link to="/adminTraffic">
                                         <h6 className="text-dark">Traffic</h6>
                                     </Link>
                                 </Nav.Link>
