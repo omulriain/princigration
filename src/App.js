@@ -10,6 +10,7 @@ import WhoWeAre from "./whoWeAre";
 import Message from "./message";
 import AdminLogin from "./adminLogin";
 import AdminHome from "./adminHome";
+import AdminTraffic from "./adminTraffic";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         } />
         <Route exact path="/adminLogin" component={AdminLogin} />
         <Route exact path="/adminHome" component={AdminHome} />
+        <Route exact path="/adminTraffic" component={AdminTraffic} />
       </Switch>
     </>
   );

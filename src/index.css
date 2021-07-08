@@ -1,6 +1,17 @@
-h1, h2, h3, h4, h5, h6, section, header {
+/*header/section*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+section {
   font-family: verdana;
 }
+
+/*style*/
 
 .card.hover-shadow-light,
 .hover-shadow-light {
@@ -23,25 +34,33 @@ h1, h2, h3, h4, h5, h6, section, header {
   padding-right: 20px;
 }
 
-.basic-margin {
-  margin-left: 23px;
-  margin-bottom: 10px;
-}
-
 .basic-padding-top {
   padding-top: 50px;
-}
-
-.basic-padding-bottom {
-  padding-bottom: 20px;
 }
 
 .small-padding-top {
   padding-top: 15px;
 }
 
+.smallest-padding-top {
+  padding-top: 7.5px;
+}
+
+.basic-padding-bottom {
+  padding-bottom: 20px;
+}
+
+.basic-margin {
+  margin-left: 23px;
+  margin-bottom: 10px;
+}
+
 .basic-margin-bottom {
   margin-bottom: 20px;
+}
+
+.basic-margin-top {
+  margin-top: 70px;
 }
 
 .width-fixed {
@@ -60,13 +79,15 @@ h1, h2, h3, h4, h5, h6, section, header {
   background-color: lightskyblue;
 }
 
+/*element changes*/
+
 .sidenav-width-border {
   width: 250px;
-  border:1px solid #000;
+  border: 1px solid #000;
 }
 
 .pos-nav-toggle {
-  margin-left: 12px;
+  margin-left: 45px;
   margin-bottom: 10px;
 }
 
@@ -80,10 +101,9 @@ h1, h2, h3, h4, h5, h6, section, header {
   right: 15px;
 }
 
-.admin-btn-position {
-  position: relative;
-  top: 310px;
-  left: 15px;
+.admin-btn-margin {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .admin-logo {
@@ -93,8 +113,20 @@ h1, h2, h3, h4, h5, h6, section, header {
 }
 
 .toggle-nav-box {
-  width:100%;
-  height:70px;
-  border:1px solid #000;
+  width: 100%;
+  height: 70px;
+  border: 1px solid #000;
   background-color: lightblue;
+}
+
+.hide-toggle-nav {
+  display: none;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 991px) {
+  .hide-toggle-nav {
+    display: block;
+  }
 }
