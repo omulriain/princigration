@@ -31,5 +31,12 @@
       "type": "cicd",
       "lastPushTimeStamp": "2021-07-09T11:37:12.791Z"
     }
+  },
+  "function": {
+    "paperscan": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
   }
 }
