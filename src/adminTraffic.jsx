@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
 import { MDBCollapse, MDBBtn } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
+import {withAuthenticator} from "@aws-amplify/ui-react";
 
 function AdminTraffic() {
     const [showShow, setShowShow] = useState(false);
@@ -164,4 +165,4 @@ function AdminTraffic() {
         </>
     );
 }
-export default AdminTraffic;
+export default withAuthenticator(AdminTraffic);

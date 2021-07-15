@@ -27,7 +27,6 @@ function App() {
             <Message />
           </div>
         } />
-        <Route exact path="/adminLogin" component={AdminLogin} />
         <Route exact path="/adminHome" component={AdminHome} />
         <Route exact path="/adminTraffic" component={AdminTraffic} />
       </Switch>

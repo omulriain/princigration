@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
 import { MDBCollapse, MDBBtn } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
+import { withAuthenticator} from "@aws-amplify/ui-react";
 
 function AdminHome() {
     const [showShow, setShowShow] = useState(false);
@@ -56,4 +57,4 @@ function AdminHome() {
         </>
     );
 }
-export default AdminHome;
+export default withAuthenticator(AdminHome);
