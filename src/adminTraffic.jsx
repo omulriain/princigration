@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
 import { MDBCollapse, MDBBtn } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
-import {withAuthenticator} from "@aws-amplify/ui-react";
+import { AmplifySignOut, withAuthenticator} from "@aws-amplify/ui-react";
 
 function AdminTraffic() {
     const [showShow, setShowShow] = useState(false);
@@ -27,6 +27,7 @@ function AdminTraffic() {
                                 Return to Public Site
                             </MDBBtn>
                         </Link>
+                        <div className="signout-button"><AmplifySignOut /></div>
                         <Nav className="flex-column" variant="tabs" activeKey="2">
                             <Nav.Item>
                                 <Nav.Link eventKey="1">
