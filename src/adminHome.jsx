@@ -58,4 +58,5 @@ function AdminHome() {
         </>
     );
 }
+
 export default withAuthenticator(AdminHome);

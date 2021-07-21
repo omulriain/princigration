@@ -166,4 +166,5 @@ function AdminTraffic() {
         </>
     );
 }
+
 export default withAuthenticator(AdminTraffic);
