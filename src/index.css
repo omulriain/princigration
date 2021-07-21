@@ -123,6 +123,13 @@ section {
   display: none;
 }
 
+.signout-button {
+  margin-left: .5rem;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  border: 1px solid #000;
+}
+
 /*media queries*/
 
 @media screen and (max-width: 991px) {

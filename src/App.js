@@ -7,7 +7,6 @@ import MyProjects from "./myProjects";
 import ContactMe from "./contactMe";
 import WhoWeAre from "./whoWeAre";
 import Message from "./message";
-import AdminLogin from "./adminLogin";
 import AdminHome from "./adminHome";
 import AdminTraffic from "./adminTraffic";
 
