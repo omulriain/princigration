@@ -41,6 +41,13 @@ function AdminHome() {
         }
     }
     
+    async function removeTodo() {
+        try {
+            await API.graphql(graphqlOperation(deleteTodo, { input: { id: "7768e5b4-bbe4-4ce6-b97a-d4a5bf3940ae"}}))
+        } catch (err) {
+            console.log('error deleting todo:', err)
+        }
+    }
 
     const styles = {
         container: { width: 400, marginTop: 75, marginLeft: 'auto', marginRight: 'auto', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', padding: 20 },
@@ -48,6 +55,7 @@ function AdminHome() {
         input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
         todoName: { fontSize: 20, fontWeight: 'bold' },
         todoDescription: { marginBottom: 0 },
+        todoID: { marginBottom: 0 },
         button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' },
         hr: { width: '100%', height: 1 }
     }
@@ -70,7 +78,7 @@ function AdminHome() {
                         <h4 className="text-dark fw-bold">Admin Dashboard</h4>
                         <MDBBtn className="pos-nav-toggle" onClick={toggleShow}><h6 className="text-dark">Close Nav</h6></MDBBtn>
                         <Link to="">
-                            <MDBBtn className="text-dark basic-margin" color="warning">
+                            <MDBBtn className="text-dark public-button" color="warning">
                                 Return to Public Site
                             </MDBBtn>
                         </Link>
@@ -118,10 +126,12 @@ function AdminHome() {
                     placeholder="Description"
                 />
                 <button style={styles.button} onClick={addTodo}>Create Todo</button>
+                <button style={styles.button} onClick={removeTodo}>Delete Todo</button>
                 {
                     todos.map((todo, index) => (
                         <div key={todo.id ? todo.id : index} style={styles.todo}>
                             <p style={styles.todoName}>{todo.name}</p>
+                            <p style={styles.todoID}>ID: {todo.id}</p>
                             <p style={styles.todoDescription}>{todo.description}</p>
                         </div>
                     ))

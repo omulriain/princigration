@@ -23,7 +23,7 @@ function AdminTraffic() {
                         <h4 className="text-dark fw-bold">Admin Dashboard</h4>
                         <MDBBtn className="pos-nav-toggle" onClick={toggleShow}><h6 className="text-dark">Close Nav</h6></MDBBtn>
                         <Link to="">
-                            <MDBBtn className="text-dark basic-margin" color="warning">
+                            <MDBBtn className="text-dark public-button" color="warning">
                                 Return to Public Site
                             </MDBBtn>
                         </Link>

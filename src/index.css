@@ -87,13 +87,18 @@ section {
 }
 
 .pos-nav-toggle {
-  margin-left: 45px;
+  margin-left: 1.5rem;
   margin-bottom: 10px;
 }
 
 .pos-nav-toggle-2 {
   margin-top: 10px;
   margin-left: 10px;
+}
+
+.public-button {
+  margin-left: 1.5rem;
+  margin-bottom: 10px;
 }
 
 .invis-bullet-compensation {
