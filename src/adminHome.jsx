@@ -40,10 +40,13 @@ function AdminHome() {
             console.log('error creating todo:', err)
         }
     }
-    
+
     async function removeTodo() {
         try {
-            await API.graphql(graphqlOperation(deleteTodo, { input: { id: "60a11262-f990-4ad5-bf1b-dd870084d5e4"}}))
+            await API.graphql(graphqlOperation(deleteTodo, { input: { id: '6badb67f-d31c-4303-9221-ac3e7b2a814b' } }))
+            const todoData = await API.graphql(graphqlOperation(listTodos))
+            const todos = todoData.data.listTodos.items
+            setTodos(todos)
         } catch (err) {
             console.log('error deleting todo:', err)
         }
@@ -54,8 +57,8 @@ function AdminHome() {
         todo: { marginBottom: 15, marginTop: 5 },
         input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
         todoName: { fontSize: 20, fontWeight: 'bold' },
+        todoID: { marginBottom: 15, fontWeight: 'bold' },
         todoDescription: { marginBottom: 0 },
-        todoID: { marginBottom: 0 },
         button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' },
         hr: { width: '100%', height: 1 }
     }
@@ -110,7 +113,6 @@ function AdminHome() {
                     </section>
                 </MDBCollapse>
             </header>
-
             <div style={styles.container}>
                 <h2>Amplify Todos</h2>
                 <input
@@ -131,7 +133,7 @@ function AdminHome() {
                     todos.map((todo, index) => (
                         <div key={todo.id ? todo.id : index} style={styles.todo}>
                             <p style={styles.todoName}>{todo.name}</p>
-                            <p style={styles.todoID}>ID: {todo.id}</p>
+                            <p style={styles.todoID}>Todo ID: {todo.id}</p>
                             <p style={styles.todoDescription}>{todo.description}</p>
                         </div>
                     ))
