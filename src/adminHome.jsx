@@ -9,9 +9,22 @@ import { listTodos } from './graphql/queries';
 
 function AdminHome() {
 
-    const initialState = { name: '', description: '' }
-    const [formState, setFormState] = useState(initialState)
-    const [todos, setTodos] = useState([])
+    const initialState = { name: '', description: '' };
+    const [formState, setFormState] = useState(initialState);
+    const [todos, setTodos] = useState([]);
+    const [showShow, setShowShow] = useState(false);
+    const toggleShow = () => setShowShow(!showShow);
+    const styles = {
+        container: { width: 400, marginTop: 75, marginLeft: 'auto', marginRight: 'auto', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', padding: 20 },
+        todo: { marginBottom: 15, marginTop: 5 },
+        input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
+        todoID: { marginBottom: 15, fontWeight: 'bold' },
+        todoName: { fontSize: 20, fontWeight: 'bold' },
+        todoDescription: { marginBottom: 0 },
+        button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' },
+        buttondel: { backgroundColor: 'black', color: 'white', float: 'right' },
+        hr: { width: '100%', height: 1 }
+    }
 
     useEffect(() => {
         fetchTodos()
@@ -41,9 +54,9 @@ function AdminHome() {
         }
     }
 
-    async function removeTodo() {
+    async function removeTodo( todoid ) {
         try {
-            await API.graphql(graphqlOperation(deleteTodo, { input: { id: '6badb67f-d31c-4303-9221-ac3e7b2a814b' } }))
+            await API.graphql(graphqlOperation(deleteTodo, { input: { id: todoid } }))
             const todoData = await API.graphql(graphqlOperation(listTodos))
             const todos = todoData.data.listTodos.items
             setTodos(todos)
@@ -52,19 +65,6 @@ function AdminHome() {
         }
     }
 
-    const styles = {
-        container: { width: 400, marginTop: 75, marginLeft: 'auto', marginRight: 'auto', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', padding: 20 },
-        todo: { marginBottom: 15, marginTop: 5 },
-        input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
-        todoName: { fontSize: 20, fontWeight: 'bold' },
-        todoID: { marginBottom: 15, fontWeight: 'bold' },
-        todoDescription: { marginBottom: 0 },
-        button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' },
-        hr: { width: '100%', height: 1 }
-    }
-
-    const [showShow, setShowShow] = useState(false);
-    const toggleShow = () => setShowShow(!showShow);
     return (
         <>
             <header>
@@ -128,18 +128,18 @@ function AdminHome() {
                     placeholder="Description"
                 />
                 <button style={styles.button} onClick={addTodo}>Create Todo</button>
-                <button style={styles.button} onClick={removeTodo}>Delete Todo</button>
                 {
                     todos.map((todo, index) => (
                         <div key={todo.id ? todo.id : index} style={styles.todo}>
-                            <p style={styles.todoName}>{todo.name}</p>
+                            {/* <button style={styles.buttondel} onClick={removeTodo(todo.id)}>Delete</button>
+                            onclick event is triggered automatically by error */}
                             <p style={styles.todoID}>Todo ID: {todo.id}</p>
+                            <p style={styles.todoName}>{todo.name}</p>
                             <p style={styles.todoDescription}>{todo.description}</p>
                         </div>
                     ))
                 }
             </div>
-
         </>
     );
 }
