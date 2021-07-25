@@ -24,7 +24,7 @@ function AdminHome() {
         button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' },
         buttondel: { backgroundColor: 'black', color: 'white', float: 'right' },
         hr: { width: '100%', height: 1 }
-    }
+    };
 
     useEffect(() => {
         fetchTodos()
@@ -49,17 +49,17 @@ function AdminHome() {
             setTodos([...todos, todo])
             setFormState(initialState)
             await API.graphql(graphqlOperation(createTodo, { input: todo }))
+            fetchTodos()
         } catch (err) {
             console.log('error creating todo:', err)
         }
     }
 
-    async function removeTodo( todoid ) {
+    async function removeTodo({ id }) {
         try {
-            await API.graphql(graphqlOperation(deleteTodo, { input: { id: todoid } }))
-            const todoData = await API.graphql(graphqlOperation(listTodos))
-            const todos = todoData.data.listTodos.items
-            setTodos(todos)
+            const newTodosArray = todos.filter(todo => todo.id !== id)
+            setTodos(newTodosArray)
+            await API.graphql(graphqlOperation(deleteTodo, { input: { id } }))
         } catch (err) {
             console.log('error deleting todo:', err)
         }
@@ -114,7 +114,7 @@ function AdminHome() {
                 </MDBCollapse>
             </header>
             <div style={styles.container}>
-                <h2>Amplify Todos</h2>
+                <h2>Princigration Todos</h2>
                 <input
                     onChange={event => setInput('name', event.target.value)}
                     style={styles.input}
@@ -131,8 +131,7 @@ function AdminHome() {
                 {
                     todos.map((todo, index) => (
                         <div key={todo.id ? todo.id : index} style={styles.todo}>
-                            {/* <button style={styles.buttondel} onClick={removeTodo(todo.id)}>Delete</button>
-                            onclick event is triggered automatically by error */}
+                            <button style={styles.buttondel} onClick={() => removeTodo(todo)}>Delete</button>
                             <p style={styles.todoID}>Todo ID: {todo.id}</p>
                             <p style={styles.todoName}>{todo.name}</p>
                             <p style={styles.todoDescription}>{todo.description}</p>
