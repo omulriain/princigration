@@ -43,7 +43,7 @@ function AdminHome() {
     
     async function removeTodo() {
         try {
-            await API.graphql(graphqlOperation(deleteTodo, { input: { id: "7768e5b4-bbe4-4ce6-b97a-d4a5bf3940ae"}}))
+            await API.graphql(graphqlOperation(deleteTodo, { input: { id: "60a11262-f990-4ad5-bf1b-dd870084d5e4"}}))
         } catch (err) {
             console.log('error deleting todo:', err)
         }
