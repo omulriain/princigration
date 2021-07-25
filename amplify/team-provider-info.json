@@ -20,6 +20,12 @@
           "appId": "d1gx8jjptckprm",
           "type": "cicd"
         }
+      },
+      "function": {
+        "paperscan": {
+          "deploymentBucketName": "amplify-princigration-dev-220118-deployment",
+          "s3Key": "amplify-builds/paperscan-756e7047796f444e3049-build.zip"
+        }
       }
     }
   }
