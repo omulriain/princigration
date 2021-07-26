@@ -11,6 +11,7 @@ function AdminTraffic() {
         <>
             <header>
                 <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark">Open Nav</h6></MDBBtn></div>
+                <div className="signout-button fixed-top"><AmplifySignOut /></div>
                 <MDBCollapse show={showShow}>
                     <section className="sidenav-width-border bg-blue fixed-top">
                         <img
@@ -21,13 +22,12 @@ function AdminTraffic() {
                             loading="lazy"
                         />
                         <h4 className="text-dark fw-bold">Admin Dashboard</h4>
-                        <MDBBtn className="pos-nav-toggle" onClick={toggleShow}><h6 className="text-dark">Close Nav</h6></MDBBtn>
+                        <MDBBtn className="pos-nav-toggle text-dark" onClick={toggleShow}><h6>Close Nav</h6></MDBBtn>
                         <Link to="">
                             <MDBBtn className="text-dark public-button" color="warning">
                                 Return to Public Site
                             </MDBBtn>
                         </Link>
-                        <div className="signout-button"><AmplifySignOut /></div>
                         <Nav className="flex-column" variant="tabs" activeKey="2">
                             <Nav.Item>
                                 <Nav.Link eventKey="1">

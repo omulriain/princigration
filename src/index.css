@@ -81,6 +81,11 @@ section {
 
 /*element changes*/
 
+.invis-bullet-compensation {
+  position: relative;
+  right: 15px;
+}
+
 .sidenav-width-border {
   width: 250px;
   border: 1px solid #000;
@@ -101,9 +106,9 @@ section {
   margin-bottom: 10px;
 }
 
-.invis-bullet-compensation {
-  position: relative;
-  right: 15px;
+.signout-button {
+  margin: 10px 10px 0 109rem;
+  border: 1px solid #000;
 }
 
 .admin-btn-margin {
@@ -126,13 +131,6 @@ section {
 
 .hide-toggle-nav {
   display: none;
-}
-
-.signout-button {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  margin-bottom: .5rem;
-  border: 1px solid #000;
 }
 
 /*media queries*/
