@@ -1,6 +1,6 @@
 import React from "react";
 
-function MyProjects() {
+function OurProjects() {
     return (
         <>
             <hr className="my-5" />
@@ -47,4 +47,4 @@ function MyProjects() {
     );
 }
 
-export default MyProjects;
+export default OurProjects;

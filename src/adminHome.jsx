@@ -104,11 +104,6 @@ function AdminHome() {
                                     <Link to="/adminHome"><h6 className="text-dark">Analytics</h6></Link>
                                 </Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="4">
-                                    <Link to="/adminHome"><h6 className="text-dark">SEO</h6></Link>
-                                </Nav.Link>
-                            </Nav.Item>
                         </Nav>
                     </section>
                 </MDBCollapse>

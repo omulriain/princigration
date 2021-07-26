@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContactMe() {
+function ContactUs() {
     return (
         <>
             <hr className="my-5" />
@@ -25,4 +25,4 @@ function ContactMe() {
     );
 }
 
-export default ContactMe;
+export default ContactUs;

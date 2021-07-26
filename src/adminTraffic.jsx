@@ -46,18 +46,13 @@ function AdminTraffic() {
                                     <Link to="/adminHome"><h6 className="text-dark">Analytics</h6></Link>
                                 </Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="4">
-                                    <Link to="/adminHome"><h6 className="text-dark">SEO</h6></Link>
-                                </Nav.Link>
-                            </Nav.Item>
                         </Nav>
                     </section>
                 </MDBCollapse>
             </header>
             <main className="basic-margin-top">
                 <div class="container">
-                    <h1 class="h3 text-center py-5 mb-0">Traffic dashboard</h1>
+                    <h1 class="h3 text-center py-5 mb-0 font-weight-bold">Traffic Dashboard</h1>
                     <section class="mb-4">
                         <div class="card">
                             <div class="card-body p-4">
