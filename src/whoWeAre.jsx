@@ -22,6 +22,7 @@ function WhoWeAre() {
                                 <ul class="list-group-flush invis-bullet-compensation">
                                     <li class="list-group-item"><img className="rounded-4 border border-success basic-margin-bottom"
                                         src="13_lb_striper.jpg"
+                                        width="190"
                                         height="250"
                                         alt="john ryan"
                                         loading="lazy"
@@ -45,6 +46,7 @@ function WhoWeAre() {
                                 <ul class="list-group-flush invis-bullet-compensation">
                                     <li class="list-group-item"><img className="rounded-4 border border-success basic-margin-bottom"
                                         src="jesse_sites.jpg"
+                                        width="140"
                                         height="250"
                                         alt="jesse sites"
                                         loading="lazy"
