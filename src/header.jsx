@@ -18,7 +18,6 @@ function Header() {
                                         width="100"
                                         height="50"
                                         alt="company logo"
-                                        loading="lazy"
                                     />
                                 </a>
                                 <ul className="navbar-nav me-auto">

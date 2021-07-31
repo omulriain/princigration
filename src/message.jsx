@@ -16,7 +16,6 @@ function Message() {
                                 width="125"
                                 height="75"
                                 alt="company logo"
-                                loading="lazy"
                             />
                         </div>
                     </div>

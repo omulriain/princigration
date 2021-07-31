@@ -78,7 +78,6 @@ function AdminHome() {
                             width="100"
                             height="50"
                             alt="company logo"
-                            loading="lazy"
                         />
                         <h4 className="text-dark fw-bold">Admin Dashboard</h4>
                         <MDBBtn className="pos-nav-toggle text-dark" onClick={toggleShow}><h6>Close Nav</h6></MDBBtn>
