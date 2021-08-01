@@ -1,4 +1,4 @@
-/*header/section*/
+/*header & section*/
 
 h1,
 h2,
@@ -50,11 +50,6 @@ section {
   padding-bottom: 20px;
 }
 
-.basic-margin {
-  margin-left: 23px;
-  margin-bottom: 10px;
-}
-
 .basic-margin-bottom {
   margin-bottom: 20px;
 }
@@ -79,7 +74,14 @@ section {
   background-color: lightskyblue;
 }
 
-/*element changes*/
+/*accordion change*/
+
+.invis-bullet-compensation {
+  position: relative;
+  right: 15px;
+}
+
+/*custom nav*/
 
 .sidenav-width-border {
   width: 250px;
@@ -87,7 +89,7 @@ section {
 }
 
 .pos-nav-toggle {
-  margin-left: 45px;
+  margin-left: 1.5rem;
   margin-bottom: 10px;
 }
 
@@ -96,9 +98,14 @@ section {
   margin-left: 10px;
 }
 
-.invis-bullet-compensation {
-  position: relative;
-  right: 15px;
+.public-button {
+  margin-left: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.signout-button {
+  margin: 10px 10px 0 109rem;
+  border: 1px solid #000;
 }
 
 .admin-btn-margin {

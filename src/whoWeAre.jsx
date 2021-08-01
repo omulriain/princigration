@@ -13,7 +13,7 @@ function WhoWeAre() {
                 <Accordion className="basic-padding-bottom">
                     <Card className="green-font">
                         <Card.Header>
-                            <Accordion.Toggle as={Button} className="width-fixed" variant="light" eventKey="0">
+                            <Accordion.Toggle as={Button} className="btn-sml" variant="light" eventKey="0">
                                 <h6>John Ryan - Chief Data Officer</h6>
                             </Accordion.Toggle>
                         </Card.Header>
@@ -22,6 +22,7 @@ function WhoWeAre() {
                                 <ul class="list-group-flush invis-bullet-compensation">
                                     <li class="list-group-item"><img className="rounded-4 border border-success basic-margin-bottom"
                                         src="13_lb_striper.jpg"
+                                        width="190"
                                         height="250"
                                         alt="john ryan"
                                         loading="lazy"
@@ -36,7 +37,7 @@ function WhoWeAre() {
                     </Card>
                     <Card>
                         <Card.Header>
-                            <Accordion.Toggle as={Button} className="width-fixed" variant="light" eventKey="1">
+                            <Accordion.Toggle as={Button} className="btn-sml" variant="light" eventKey="1">
                                 <h6>Jesse Sites - Independent Web Developer</h6>
                             </Accordion.Toggle>
                         </Card.Header>
@@ -45,6 +46,7 @@ function WhoWeAre() {
                                 <ul class="list-group-flush invis-bullet-compensation">
                                     <li class="list-group-item"><img className="rounded-4 border border-success basic-margin-bottom"
                                         src="jesse_sites.jpg"
+                                        width="140"
                                         height="250"
                                         alt="jesse sites"
                                         loading="lazy"
@@ -63,7 +65,7 @@ function WhoWeAre() {
                     </Card>
                     <Card className="green-font">
                         <Card.Header>
-                            <Accordion.Toggle as={Button} className="width-fixed" variant="light" eventKey="2">
+                            <Accordion.Toggle as={Button} className="btn-sm" variant="light" eventKey="2">
                                 <h6>Sam Dawson - Graphic and Digital Media Artist</h6>
                             </Accordion.Toggle>
                         </Card.Header>
@@ -73,4 +75,5 @@ function WhoWeAre() {
         </>
     );
 }
+
 export default WhoWeAre;

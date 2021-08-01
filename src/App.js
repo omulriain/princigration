@@ -3,11 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 import Header from "./header";
 import Main from "./main";
 import Experience from "./experience";
-import MyProjects from "./myProjects";
-import ContactMe from "./contactMe";
+import OurProjects from "./ourProjects";
+import ContactUs from "./contactUs";
 import WhoWeAre from "./whoWeAre";
 import Message from "./message";
-import AdminLogin from "./adminLogin";
 import AdminHome from "./adminHome";
 import AdminTraffic from "./adminTraffic";
 
@@ -20,8 +19,8 @@ function App() {
             <Header />
             <Main />
             <Experience />
-            <MyProjects />
-            <ContactMe />
+            <OurProjects />
+            <ContactUs />
             <WhoWeAre />
             <Message />
           </div>
@@ -32,4 +31,5 @@ function App() {
     </>
   );
 }
+
 export default App;

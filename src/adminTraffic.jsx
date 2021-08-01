@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
 import { MDBCollapse, MDBBtn } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
-import {withAuthenticator} from "@aws-amplify/ui-react";
+import { AmplifySignOut, withAuthenticator} from "@aws-amplify/ui-react";
 
 function AdminTraffic() {
     const [showShow, setShowShow] = useState(false);
@@ -11,19 +11,20 @@ function AdminTraffic() {
         <>
             <header>
                 <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark">Open Nav</h6></MDBBtn></div>
+                <div className="signout-button fixed-top"><AmplifySignOut /></div>
                 <MDBCollapse show={showShow}>
                     <section className="sidenav-width-border bg-blue fixed-top">
                         <img
                             className="admin-logo"
                             src="princigration logo sapphire blue Vfinal2 no back.png"
-                            height="50"
+                            width="100"
+                            height="61"
                             alt="company logo"
-                            loading="lazy"
                         />
                         <h4 className="text-dark fw-bold">Admin Dashboard</h4>
-                        <MDBBtn className="pos-nav-toggle" onClick={toggleShow}><h6 className="text-dark">Close Nav</h6></MDBBtn>
+                        <MDBBtn className="pos-nav-toggle text-dark" onClick={toggleShow}><h6>Close Nav</h6></MDBBtn>
                         <Link to="">
-                            <MDBBtn className="text-dark basic-margin" color="warning">
+                            <MDBBtn className="text-dark public-button" color="warning">
                                 Return to Public Site
                             </MDBBtn>
                         </Link>
@@ -45,18 +46,13 @@ function AdminTraffic() {
                                     <Link to="/adminHome"><h6 className="text-dark">Analytics</h6></Link>
                                 </Nav.Link>
                             </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="4">
-                                    <Link to="/adminHome"><h6 className="text-dark">SEO</h6></Link>
-                                </Nav.Link>
-                            </Nav.Item>
                         </Nav>
                     </section>
                 </MDBCollapse>
             </header>
             <main className="basic-margin-top">
                 <div class="container">
-                    <h1 class="h3 text-center py-5 mb-0">Traffic dashboard</h1>
+                    <h1 class="h3 text-center py-5 mb-0 font-weight-bold">Traffic Dashboard</h1>
                     <section class="mb-4">
                         <div class="card">
                             <div class="card-body p-4">
@@ -165,4 +161,5 @@ function AdminTraffic() {
         </>
     );
 }
+
 export default withAuthenticator(AdminTraffic);

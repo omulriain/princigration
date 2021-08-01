@@ -13,9 +13,9 @@ function Message() {
                             <h5 className="mb-0">contact@princigration.com</h5>
                             <img
                                 src="princigration logo emerald green Vfinal2 no back.png"
+                                width="122"
                                 height="75"
                                 alt="company logo"
-                                loading="lazy"
                             />
                         </div>
                     </div>
@@ -24,4 +24,5 @@ function Message() {
         </>
     );
 }
+
 export default Message;
