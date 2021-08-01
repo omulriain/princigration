@@ -79,12 +79,14 @@ section {
   background-color: lightskyblue;
 }
 
-/*element changes*/
+/*accordion change*/
 
 .invis-bullet-compensation {
   position: relative;
   right: 15px;
 }
+
+/*custom nav*/
 
 .sidenav-width-border {
   width: 250px;
