@@ -15,8 +15,8 @@ function Header() {
                                 <a class="navbar-brand mt-2 mt-lg-0" href="#intro">
                                     <img
                                         src="princigration logo emerald green Vfinal2 no back.png"
-                                        width="100"
-                                        height="50"
+                                        width="122"
+                                        height="75"
                                         alt="company logo"
                                     />
                                 </a>
@@ -52,7 +52,7 @@ function Header() {
                 <section>
                     <div id="intro" className="text-center bg-image vh-100"
                         style={{ backgroundImage: 'url(IMG_2440.jpg)',
-                        width: "1905px", height: "1080px"  }}>
+                        height: "1100px" }}>
                         <div className="mask" style={{ backgroundColor: "rgba(230, 255, 230, 0.65)" }}>
                             <div className="d-flex justify-content-center align-items-center h-100 mt-4">
                                 <div className="">

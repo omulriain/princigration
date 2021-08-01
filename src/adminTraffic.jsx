@@ -17,8 +17,8 @@ function AdminTraffic() {
                         <img
                             className="admin-logo"
                             src="princigration logo sapphire blue Vfinal2 no back.png"
-                            width="100"
-                            height="50"
+                            width="122"
+                            height="75"
                             alt="company logo"
                         />
                         <h4 className="text-dark fw-bold">Admin Dashboard</h4>

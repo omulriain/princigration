@@ -15,7 +15,7 @@ function AdminHome() {
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
     const styles = {
-        container: { width: 400, marginTop: 75, marginLeft: 'auto', marginRight: 'auto', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', padding: 20 },
+        container: { width: 325, marginTop: 75, marginLeft: 'auto', marginRight: 'auto', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', padding: 20 },
         todo: { marginBottom: 15, marginTop: 5 },
         input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
         todoID: { marginBottom: 15, fontWeight: 'bold' },
@@ -76,7 +76,7 @@ function AdminHome() {
                             className="admin-logo"
                             src="princigration logo sapphire blue Vfinal2 no back.png"
                             width="100"
-                            height="50"
+                            height="61"
                             alt="company logo"
                         />
                         <h4 className="text-dark fw-bold">Admin Dashboard</h4>
