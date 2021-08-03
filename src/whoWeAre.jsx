@@ -21,9 +21,9 @@ function WhoWeAre() {
                             <Card.Body>
                                 <ul class="list-group-flush invis-bullet-compensation">
                                     <li class="list-group-item"><img className="rounded-4 border border-success basic-margin-bottom"
-                                        src="13_lb_striper.jpg"
+                                        src="13_lb_striper.webp"
                                         width="190"
-                                        height="250"
+                                        height="253"
                                         alt="john ryan"
                                         loading="lazy"
                                     /></li>
@@ -45,8 +45,8 @@ function WhoWeAre() {
                             <Card.Body>
                                 <ul class="list-group-flush invis-bullet-compensation">
                                     <li class="list-group-item"><img className="rounded-4 border border-success basic-margin-bottom"
-                                        src="jesse_sites.jpg"
-                                        width="140"
+                                        src="jesse_sites.webp"
+                                        width="141"
                                         height="250"
                                         alt="jesse sites"
                                         loading="lazy"

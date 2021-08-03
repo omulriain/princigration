@@ -51,7 +51,7 @@ function Header() {
                 </MDBCollapse>
                 <section>
                     <div id="intro" className="text-center bg-image vh-100"
-                        style={{ backgroundImage: 'url(IMG_2440.jpg)',
+                        style={{ backgroundImage: 'url(background_photo.webp)',
                         height: "1100px" }}>
                         <div className="mask" style={{ backgroundColor: "rgba(230, 255, 230, 0.65)" }}>
                             <div className="d-flex justify-content-center align-items-center h-100 mt-4">
