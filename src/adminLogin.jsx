@@ -23,17 +23,15 @@ function AdminLogin() {
                         <Form.Check className="small-padding-top" type="checkbox" label="I agree that I am a Princigiration administrator." />
                     </Form.Group>
                     <div className="small-padding-top">
-                    <Link to="/adminHome">
                         <Button variant="success" type="submit">
                             Submit
                         </Button>
-                        </Link>
                     </div>
                     <div className="small-padding-top">
-                    <Link to="">
-                        <Button variant="warning">
-                            Return to Public Site
-                        </Button>
+                        <Link to="">
+                            <Button variant="warning">
+                                Return to Public Site
+                            </Button>
                         </Link>
                     </div>
                 </Form>
