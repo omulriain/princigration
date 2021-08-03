@@ -42,7 +42,7 @@ function Header() {
                                 </ul>
                             </div>
                         </div>
-                        <Link to="/adminHome"><button type="button" class="btn btn-success btn-lg admin-btn-margin">Admin</button></Link>
+                        <Link to="/adminHome"><button type="button" class="btn btn-success btn-lg basic-margin-sides">Admin</button></Link>
                         <i class="fas fa-toggle-on basic-padding fa-3x hide-toggle-nav" onClick={toggleShow}></i>
                     </nav>
                 </MDBCollapse>

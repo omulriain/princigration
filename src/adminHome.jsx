@@ -9,11 +9,11 @@ import { listTodos } from './graphql/queries';
 
 function AdminHome() {
 
+    const [showShow, setShowShow] = useState(false);
+    const toggleShow = () => setShowShow(!showShow);
     const initialState = { name: '', description: '' };
     const [formState, setFormState] = useState(initialState);
     const [todos, setTodos] = useState([]);
-    const [showShow, setShowShow] = useState(false);
-    const toggleShow = () => setShowShow(!showShow);
     const styles = {
         container: { width: 325, marginTop: 75, marginLeft: 'auto', marginRight: 'auto', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', padding: 20 },
         todo: { marginBottom: 15, marginTop: 5 },
