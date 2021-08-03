@@ -104,7 +104,7 @@ section {
 }
 
 .signout-button {
-  margin: 10px 10px 0 109rem;
+  margin: 10px 10px 50% 50%;
   border: 1px solid #000;
 }
 
@@ -135,5 +135,12 @@ section {
 @media screen and (max-width: 991px) {
   .hide-toggle-nav {
     display: block;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .signout-button {
+    margin: 10px 10px 50% 80%;
+    border: 1px solid #000;
   }
 }
