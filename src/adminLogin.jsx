@@ -5,7 +5,7 @@ import { Form, Button } from "react-bootstrap";
 function AdminLogin() {
     return (
         <>
-            <section className="basic-padding">
+            <section className="ps-5 pe-5">
                 <h1 className="basic-padding-top">Princigration Administrator Login</h1>
                 <Form className="basic-padding-top">
                     <Form.Group controlId="formAdminLogin">
@@ -16,18 +16,18 @@ function AdminLogin() {
                         </Form.Text>
                     </Form.Group>
                     <Form.Group controlId="formAdminPassword">
-                        <Form.Label className="text-dark small-padding-top"><h5>Password:</h5></Form.Label>
+                        <Form.Label className="text-dark pt-2"><h5>Password:</h5></Form.Label>
                         <Form.Control type="password" placeholder="Enter password" />
                     </Form.Group>
                     <Form.Group controlId="formVerifyCheckbox">
-                        <Form.Check className="small-padding-top" type="checkbox" label="I agree that I am a Princigiration administrator." />
+                        <Form.Check className="pt-2" type="checkbox" label="I agree that I am a Princigiration administrator." />
                     </Form.Group>
-                    <div className="small-padding-top">
+                    <div className="pt-2">
                         <Button variant="success" type="submit">
                             Submit
                         </Button>
                     </div>
-                    <div className="small-padding-top">
+                    <div className="pt-2">
                         <Link to="">
                             <Button variant="warning">
                                 Return to Public Site

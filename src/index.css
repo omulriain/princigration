@@ -1,4 +1,4 @@
-/*header & section*/
+/*header, section, & body*/
 
 h1,
 h2,
@@ -9,6 +9,10 @@ h6,
 header,
 section {
   font-family: verdana;
+}
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
 /*style*/
@@ -29,38 +33,12 @@ section {
   background-color: #78a74f;
 }
 
-.basic-padding {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .basic-padding-top {
   padding-top: 50px;
 }
 
-.small-padding-top {
-  padding-top: 15px;
-}
-
-.smallest-padding-top {
-  padding-top: 7.5px;
-}
-
-.basic-padding-bottom {
-  padding-bottom: 20px;
-}
-
-.basic-margin-bottom {
-  margin-bottom: 20px;
-}
-
 .basic-margin-top {
   margin-top: 70px;
-}
-
-.basic-margin-sides {
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .width-fixed {
@@ -79,14 +57,7 @@ section {
   background-color: lightskyblue;
 }
 
-/*accordion change*/
-
-.invis-bullet-compensation {
-  position: relative;
-  right: 15px;
-}
-
-/*custom nav*/
+/*custom admin nav*/
 
 .sidenav-width-border {
   width: 250px;
@@ -128,6 +99,13 @@ section {
 
 .hide-toggle-nav {
   display: none;
+}
+
+/*accordion fix*/
+
+.invis-bullet-compensation {
+  position: relative;
+  right: 15px;
 }
 
 /*media queries*/

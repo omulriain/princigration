@@ -1,7 +1,7 @@
 import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
 
-function WhoWeAre() {
+function People() {
     return (
         <>
             <hr className="my-5" />
@@ -10,7 +10,7 @@ function WhoWeAre() {
                 <p className="text-center mb-5 mx-auto w-responsive green-font">
                     Princigration is a team of dedicated and professional developers having the technical skills to suit any of your needs.
                 </p>
-                <Accordion className="basic-padding-bottom">
+                <Accordion className="pb-3">
                     <Card className="green-font">
                         <Card.Header>
                             <Accordion.Toggle as={Button} className="btn-sml" variant="light" eventKey="0">
@@ -20,7 +20,7 @@ function WhoWeAre() {
                         <Accordion.Collapse eventKey="0">
                             <Card.Body>
                                 <ul class="list-group-flush invis-bullet-compensation">
-                                    <li class="list-group-item"><img className="rounded-4 border border-success basic-margin-bottom"
+                                    <li class="list-group-item"><img className="rounded-4 border border-success mb-3"
                                         src="13_lb_striper.webp"
                                         width="190"
                                         height="253"
@@ -44,7 +44,7 @@ function WhoWeAre() {
                         <Accordion.Collapse eventKey="1">
                             <Card.Body>
                                 <ul class="list-group-flush invis-bullet-compensation">
-                                    <li class="list-group-item"><img className="rounded-4 border border-success basic-margin-bottom"
+                                    <li class="list-group-item"><img className="rounded-4 border border-success mb-3"
                                         src="jesse_sites.webp"
                                         width="141"
                                         height="250"
@@ -76,4 +76,4 @@ function WhoWeAre() {
     );
 }
 
-export default WhoWeAre;
+export default People;

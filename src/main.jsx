@@ -4,7 +4,7 @@ function Main() {
     return (
         <>
             <main>
-                <div className="container my-5" id={"about_princigration"}>
+                <div className="container my-5" id={"about"}>
                     <section className="text-center">
                         <h3 className="mb-5 green-font">About Princigration</h3>
                         <p className="text-center mb-5 mx-auto w-responsive green-font">

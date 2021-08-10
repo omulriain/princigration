@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 import { AmplifySignOut, withAuthenticator} from "@aws-amplify/ui-react";
 
 function AdminTraffic() {
+
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
+    
     return (
         <>
             <header>

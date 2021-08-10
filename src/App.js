@@ -3,10 +3,10 @@ import { Route, Switch } from 'react-router-dom';
 import Header from "./header";
 import Main from "./main";
 import Experience from "./experience";
-import OurProjects from "./ourProjects";
-import ContactUs from "./contactUs";
-import WhoWeAre from "./whoWeAre";
-import Message from "./message";
+import Projects from "./projects";
+import Contact from "./contact";
+import People from "./people";
+import Footer from "./footer";
 import AdminHome from "./adminHome";
 import AdminTraffic from "./adminTraffic";
 
@@ -19,10 +19,10 @@ function App() {
             <Header />
             <Main />
             <Experience />
-            <OurProjects />
-            <ContactUs />
-            <WhoWeAre />
-            <Message />
+            <Projects />
+            <Contact />
+            <People />
+            <Footer />
           </div>
         } />
         <Route exact path="/adminHome" component={AdminHome} />

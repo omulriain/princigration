@@ -1,6 +1,6 @@
 import React from "react";
 
-function OurProjects() {
+function Projects() {
     return (
         <>
             <hr className="my-5" />
@@ -9,7 +9,7 @@ function OurProjects() {
                 <p className="text-center mb-5 mx-auto w-responsive green-font">
                     Princigration has a coveted collection of top-tier projects implementing our Principles, while achieving real world success.
                 </p>
-                <div className="row basic-padding text-center">
+                <div className="row px-5 text-center">
                     <div className="col-md-4 mb-4 mb-md-0">
                         <div className="card hover-shadow-light">
                             <div className="card-body">
@@ -47,4 +47,4 @@ function OurProjects() {
     );
 }
 
-export default OurProjects;
+export default Projects;

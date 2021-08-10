@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import { MDBCollapse } from 'mdb-react-ui-kit';
 
 function Header() {
+
     const [showShow, setShowShow] = useState(true);
     const toggleShow = () => setShowShow(!showShow);
+
     return (
         <>
             <header>
@@ -12,7 +14,7 @@ function Header() {
                     <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-green">
                         <div className="container">
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                <a class="navbar-brand mt-2 mt-lg-0" href="#intro">
+                                <a class="navbar-brand mt-2 mt-lg-0" href="#home">
                                     <img
                                         src="princigration logo emerald green Vfinal2 no back.png"
                                         width="122"
@@ -22,35 +24,35 @@ function Header() {
                                 </a>
                                 <ul className="navbar-nav me-auto">
                                     <li className="nav-item">
-                                        <a className="nav-link active" aria-current="page" href="#intro">Home</a>
+                                        <a className="nav-link active" href="#home">Home</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#about_princigration">About</a>
+                                        <a className="nav-link active" href="#about">About</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#experience">Experience</a>
+                                        <a className="nav-link active" href="#experience">Experience</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#projects">Projects</a>
+                                        <a className="nav-link active" href="#projects">Projects</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#contact">Contact</a>
+                                        <a className="nav-link active" href="#contact">Contact</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="#people">People</a>
+                                        <a className="nav-link active" href="#people">People</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <Link to="/adminHome"><button type="button" class="btn btn-success btn-lg basic-margin-sides">Admin</button></Link>
-                        <i class="fas fa-toggle-on basic-padding fa-3x hide-toggle-nav" onClick={toggleShow}></i>
+                        <Link to="/adminHome"><button type="button" class="btn btn-success btn-lg mx-3">Admin</button></Link>
+                        <i class="fas fa-toggle-on px-5 fa-3x hide-toggle-nav" onClick={toggleShow}></i>
                     </nav>
                 </MDBCollapse>
                 <MDBCollapse show={!showShow}>
-                    <i class="fas fa-toggle-off basic-padding smallest-padding-top fa-3x fixed-top" onClick={toggleShow}></i>
+                    <i class="fas fa-toggle-off px-5 pt-2 fa-3x fixed-top" onClick={toggleShow}></i>
                 </MDBCollapse>
                 <section>
-                    <div id="intro" className="text-center bg-image vh-100"
+                    <div id="home" className="text-center bg-image vh-100"
                         style={{ backgroundImage: 'url(background_photo.webp)',
                         height: "1100px" }}>
                         <div className="mask" style={{ backgroundColor: "rgba(230, 255, 230, 0.65)" }}>
@@ -61,7 +63,7 @@ function Header() {
                                         <mark style={{ backgroundColor: "rgb(115,248,67)" }}>Principle &#8747; Integration
                                         </mark>
                                     </h5>
-                                    <a href="/#about_princigration" className="btn btn-floating btn-lg btn-dark"> <i
+                                    <a href="/#about" className="btn btn-floating btn-lg btn-dark"> <i
                                         className="fas fa-angle-down"
                                         aria-hidden="true"></i></a>
                                 </div>
