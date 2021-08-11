@@ -1,6 +1,6 @@
 import React from "react";
 
-function Message() {
+function Footer() {
     return (
         <>
             <section>
@@ -25,4 +25,4 @@ function Message() {
     );
 }
 
-export default Message;
+export default Footer;
