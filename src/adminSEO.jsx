@@ -31,7 +31,7 @@ function AdminSEO() {
                                 Return to Public Site
                             </MDBBtn>
                         </Link>
-                        <Nav className="flex-column" variant="tabs" activeKey="2">
+                        <Nav className="flex-column" variant="tabs" activeKey="3">
                             <Nav.Item>
                                 <Nav.Link eventKey="1">
                                     <Link to="/adminHome"><h6 className="text-dark">Home</h6></Link>
