@@ -101,7 +101,7 @@ function AdminHome() {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="3">
-                                    <Link to="/adminHome"><h6 className="text-dark">Analytics</h6></Link>
+                                    <Link to="/adminSEO"><h6 className="text-dark">SEO</h6></Link>
                                 </Nav.Link>
                             </Nav.Item>
                         </Nav>

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
-import { MDBCollapse, MDBBtn } from 'mdb-react-ui-kit';
+import { MDBCollapse, MDBBtn, MDBChart } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
-import { AmplifySignOut, withAuthenticator} from "@aws-amplify/ui-react";
+import { AmplifySignOut, withAuthenticator } from "@aws-amplify/ui-react";
 
 function AdminTraffic() {
 
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
-    
+
     return (
         <>
             <header>
@@ -45,7 +45,7 @@ function AdminTraffic() {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="3">
-                                    <Link to="/adminHome"><h6 className="text-dark">Analytics</h6></Link>
+                                    <Link to="/adminSEO"><h6 className="text-dark">SEO</h6></Link>
                                 </Nav.Link>
                             </Nav.Item>
                         </Nav>
@@ -53,13 +53,13 @@ function AdminTraffic() {
                 </MDBCollapse>
             </header>
             <main className="basic-margin-top">
-                <div class="container">
+                <div class="container text-center">
                     <h1 class="h3 text-center py-5 mb-0 font-weight-bold">Traffic Dashboard</h1>
                     <section class="mb-4">
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <div class="row">
-                                    <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <div class="card">
+                                <div class="card-body p-4">
                                         <select class="select">
                                             <option value="1">Today</option>
                                             <option value="2">Yesterday</option>
@@ -68,37 +68,12 @@ function AdminTraffic() {
                                             <option value="5">Last 90 days</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-outline datepicker">
-                                            <input type="text" class="form-control" id="exampleDatepicker1" data-toggle="datepicker" />
-                                            <label for="exampleDatepicker1" class="form-label">Custom Date</label>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
                     <section>
-                        <div class="row">
-                            <div class="col-lg-3 mb-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <p class="text-uppercase small mb-2">
-                                            <strong>USERS</strong>
-                                        </p>
-                                        <h5 class="mb-0">
-                                            <strong>14 567</strong>
-                                            <small class="text-success ms-2">
-                                                <i class="fas fa-arrow-up fa-sm pe-1"></i>13,48%</small>
-                                        </h5>
-                                        <hr />
-                                        <p class="text-uppercase text-muted small mb-2">
-                                            Previous period
-                                        </p>
-                                        <h5 class="text-muted mb-0">11 467</h5>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="row d-flex justify-content-center">
                             <div class="col-lg-3 mb-4">
                                 <div class="card">
                                     <div class="card-body">
@@ -137,22 +112,54 @@ function AdminTraffic() {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 mb-4">
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-6 mb-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <p class="text-uppercase small mb-2">
-                                            <strong>BOUNCE RATE</strong>
-                                        </p>
-                                        <h5 class="mb-0">
-                                            <strong>32.35%</strong>
-                                            <small class="text-danger ms-2">
-                                                <i class="fas fa-arrow-down fa-sm pe-1"></i>23,58%</small>
-                                        </h5>
-                                        <hr />
-                                        <p class="text-uppercase text-muted small mb-2">
-                                            Previous period
-                                        </p>
-                                        <h5 class="text-muted mb-0">24.35%</h5>
+                                        <MDBChart
+                                            type='bar'
+                                            options={{
+                                                scales: {
+                                                    x: {
+                                                        ticks: {
+                                                            color: '#4285F4',
+                                                        },
+                                                    },
+                                                    y: {
+                                                        ticks: {
+                                                            color: '#f44242',
+                                                        },
+                                                    },
+                                                },
+                                            }}
+                                            data={{
+                                                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                                                datasets: [
+                                                    {
+                                                        label: 'Traffic',
+                                                        data: [30, 15, 62, 65, 61, 6],
+                                                        backgroundColor: [
+                                                            'rgba(255, 99, 132, 0.2)',
+                                                            'rgba(54, 162, 235, 0.2)',
+                                                            'rgba(255, 206, 86, 0.2)',
+                                                            'rgba(75, 192, 192, 0.2)',
+                                                            'rgba(153, 102, 255, 0.2)',
+                                                            'rgba(255, 159, 64, 0.2)',
+                                                        ],
+                                                        borderColor: [
+                                                            'rgba(255,99,132,1)',
+                                                            'rgba(54, 162, 235, 1)',
+                                                            'rgba(255, 206, 86, 1)',
+                                                            'rgba(75, 192, 192, 1)',
+                                                            'rgba(153, 102, 255, 1)',
+                                                            'rgba(255, 159, 64, 1)',
+                                                        ],
+                                                        borderWidth: 1,
+                                                    },
+                                                ],
+                                            }}
+                                        />
                                     </div>
                                 </div>
                             </div>

@@ -9,6 +9,7 @@ import People from "./people";
 import Footer from "./footer";
 import AdminHome from "./adminHome";
 import AdminTraffic from "./adminTraffic";
+import AdminSEO from "./adminSEO";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         } />
         <Route exact path="/adminHome" component={AdminHome} />
         <Route exact path="/adminTraffic" component={AdminTraffic} />
+        <Route exact path="/adminSEO" component={AdminSEO} />
       </Switch>
     </>
   );
