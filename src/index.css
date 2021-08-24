@@ -1,4 +1,4 @@
-/*header, section, & body*/
+/* header, section, & body */
 
 h1,
 h2,
@@ -15,7 +15,7 @@ body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
-/*style*/
+/* styles */
 
 .card.hover-shadow-light,
 .hover-shadow-light {
@@ -69,7 +69,7 @@ body {
   filter: drop-shadow(2px 2px 2px darkslategrey);
 }
 
-/*custom admin nav*/
+/* custom admin nav */
 
 .bg-blue {
   background-color: lightskyblue;
@@ -122,18 +122,22 @@ body {
   display: none;
 }
 
-/*accordion fix*/
+/* accordion fix */
 
 .invis-bullet-compensation {
   position: relative;
   right: 15px;
 }
 
-/*media queries*/
+/* media queries */
 
 @media screen and (max-width: 991px) {
   .hide-toggle-nav {
     display: block;
+  }
+
+  .container2 {
+    width: 300px !important;
   }
 }
 

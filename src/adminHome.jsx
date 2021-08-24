@@ -15,7 +15,7 @@ function AdminHome() {
     const [formState, setFormState] = useState(initialState);
     const [todos, setTodos] = useState([]);
     const styles = {
-        container: { width: 325, marginTop: 75, marginLeft: 'auto', marginRight: 'auto', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', padding: 20 },
+        container: { width: 500, marginTop: 75, marginLeft: 'auto', marginRight: 'auto', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', padding: 20 },
         todo: { marginBottom: 15, marginTop: 5 },
         input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, padding: 8, fontSize: 18 },
         todoID: { marginBottom: 15, fontWeight: 'bold' },
@@ -107,7 +107,7 @@ function AdminHome() {
                     </section>
                 </MDBCollapse>
             </header>
-            <div style={styles.container}>
+            <div class="container2" style={styles.container}>
                 <h2 class="text-shadow3">Princigration Todos</h2>
                 <input
                     onChange={event => setInput('name', event.target.value)}
