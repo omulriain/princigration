@@ -1,4 +1,4 @@
-/* header, section, & body */
+/*header, section, & body*/
 
 h1,
 h2,
@@ -15,7 +15,7 @@ body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* styles */
+/*style*/
 
 .card.hover-shadow-light,
 .hover-shadow-light {
@@ -67,6 +67,18 @@ body {
 
 .png-shadow {
   filter: drop-shadow(2px 2px 2px darkslategrey);
+}
+
+/*animation*/
+
+.blink-anim {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 25%;
+  }
 }
 
 /* admin nav */
@@ -122,14 +134,14 @@ body {
   display: none;
 }
 
-/* accordion fix */
+/*accordion fix*/
 
 .invis-bullet-compensation {
   position: relative;
   right: 15px;
 }
 
-/* media queries */
+/*media queries*/
 
 @media screen and (max-width: 991px) {
   .hide-toggle-nav {
