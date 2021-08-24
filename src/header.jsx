@@ -16,13 +16,14 @@ function Header() {
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <a class="navbar-brand mt-2 mt-lg-0" href="#home">
                                     <img
+                                        class="png-shadow"
                                         src="princigration logo emerald green Vfinal2 no back.png"
                                         width="122"
                                         height="75"
                                         alt="company logo"
                                     />
                                 </a>
-                                <ul className="navbar-nav me-auto">
+                                <ul className="navbar-nav me-auto text-shadow">
                                     <li className="nav-item">
                                         <a className="nav-link active" href="#home">Home</a>
                                     </li>
@@ -44,7 +45,7 @@ function Header() {
                                 </ul>
                             </div>
                         </div>
-                        <Link to="/adminHome"><button type="button" class="btn btn-success btn-lg mx-3">Admin</button></Link>
+                        <Link to="/adminHome"><button type="button" class="btn btn-success btn-lg mx-3 text-shadow">Admin</button></Link>
                         <i class="fas fa-toggle-on px-5 fa-3x hide-toggle-nav" onClick={toggleShow}></i>
                     </nav>
                 </MDBCollapse>
@@ -58,7 +59,7 @@ function Header() {
                         <div className="mask" style={{ backgroundColor: "rgba(230, 255, 230, 0.65)" }}>
                             <div className="d-flex justify-content-center align-items-center h-100 mt-4">
                                 <div className="">
-                                    <h1 className="display-2 mb-4 fw-bold green-font"><strong>Princigration</strong></h1>
+                                    <h1 className="display-2 mb-4 fw-bold green-font text-shadow"><strong>Princigration</strong></h1>
                                     <h5 className="text-uppercase mb-5">
                                         <mark style={{ backgroundColor: "rgb(115,248,67)" }}>Principle &#8747; Integration
                                         </mark>

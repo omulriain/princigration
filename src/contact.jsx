@@ -5,7 +5,7 @@ function Contact() {
         <>
             <hr className="my-5" />
             <section className="text-center" id={"contact"}>
-                <h3 className="mb-5 green-font">Contact Us</h3>
+                <h3 className="mb-5 font-weight-bold green-font text-shadow2">Contact Us</h3>
                 <ul className="list-unstyled">
                     <li>
                         <i className="fas fa-map-marker-alt fa-2x text-dark"></i>

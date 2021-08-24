@@ -53,11 +53,27 @@ body {
   background-color: green;
 }
 
-.bg-blue {
-  background-color: lightskyblue;
+.text-shadow {
+  text-shadow: 2px 2px 2px darkslategrey;
+}
+
+.text-shadow2 {
+  text-shadow: 3px 3px 3px lightgreen;
+}
+
+.text-shadow3 {
+  text-shadow: 3px 3px 3px lightskyblue;
+}
+
+.png-shadow {
+  filter: drop-shadow(2px 2px 2px darkslategrey);
 }
 
 /*custom admin nav*/
+
+.bg-blue {
+  background-color: lightskyblue;
+}
 
 .sidenav-width-border {
   width: 250px;
@@ -81,7 +97,7 @@ body {
 
 .signout-button {
   margin: 10px 10px 50% 50%;
-  border: 1px solid #000;
+  box-shadow: 1px 1px 5px darkslategray;
 }
 
 .admin-logo {

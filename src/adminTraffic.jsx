@@ -54,7 +54,7 @@ function AdminTraffic() {
             </header>
             <main className="basic-margin-top">
                 <div class="container text-center">
-                    <h1 class="h3 text-center py-5 mb-0 font-weight-bold">Traffic Dashboard</h1>
+                    <h1 class="h3 text-center py-5 mb-0 font-weight-bold text-shadow3">Traffic Dashboard</h1>
                     <section class="mb-4">
                     <div class="row d-flex justify-content-center">
                         <div class="col-md-6 mb-4 mb-md-0">

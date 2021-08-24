@@ -54,7 +54,7 @@ function AdminSEO() {
                 </MDBCollapse>
             </header>
             <div class="container" style={{ marginTop: "58px" }}>
-                <h1 class="h3 text-center py-5 mb-0 font-weight-bold">SEO Dashboard</h1>
+                <h1 class="h3 text-center py-5 mb-0 font-weight-bold text-shadow3">SEO Dashboard</h1>
                 <section>
                     <div class="row d-flex justify-content-center">
                     <div class="col-lg-6 mb-4 mb-lg-0">

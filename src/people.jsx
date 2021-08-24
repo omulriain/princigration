@@ -6,7 +6,7 @@ function People() {
         <>
             <hr className="my-5" />
             <section className="text-center" id="people">
-                <h3 className="mb-5 green-font">People</h3>
+                <h3 className="mb-5 font-weight-bold green-font text-shadow2">People</h3>
                 <p className="text-center mb-5 mx-auto w-responsive green-font">
                     Princigration is a team of dedicated and professional developers having the technical skills to suit any of your needs.
                 </p>
@@ -14,7 +14,7 @@ function People() {
                     <Card className="green-font">
                         <Card.Header>
                             <Accordion.Toggle as={Button} className="btn-sml" variant="light" eventKey="0">
-                                <h6>John Ryan - Chief Data Officer</h6>
+                                <h6 class="font-weight-bold">John Ryan - Chief Data Officer</h6>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="0">
@@ -38,7 +38,7 @@ function People() {
                     <Card>
                         <Card.Header>
                             <Accordion.Toggle as={Button} className="btn-sml" variant="light" eventKey="1">
-                                <h6>Jesse Sites - Independent Web Developer</h6>
+                                <h6 class="font-weight-bold">Jesse Sites - Independent Web Developer</h6>
                             </Accordion.Toggle>
                         </Card.Header>
                         <Accordion.Collapse eventKey="1">
@@ -66,7 +66,7 @@ function People() {
                     <Card className="green-font">
                         <Card.Header>
                             <Accordion.Toggle as={Button} className="btn-sm" variant="light" eventKey="2">
-                                <h6>Sam Dawson - Graphic and Digital Media Artist</h6>
+                                <h6 class="font-weight-bold">Sam Dawson - Graphic and Digital Media Artist</h6>
                             </Accordion.Toggle>
                         </Card.Header>
                     </Card>

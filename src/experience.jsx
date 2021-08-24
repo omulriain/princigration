@@ -5,7 +5,7 @@ function Experience() {
         <>
             <hr className="my-5" />
             <section id={"experience"}>
-                <h3 className="mb-5 text-center green-font">Experience</h3>
+                <h3 className="mb-5 text-center font-weight-bold green-font text-shadow2">Experience</h3>
                 <div className="row px-5 text-center">
                     <div className="col-md-4 mb-4 mb-md-0 basic-padding-top">
                         <h5 className="text-uppercase mb-5 green-font">Data</h5>
