@@ -22,8 +22,7 @@ function AdminHome() {
         todoName: { fontSize: 20, fontWeight: 'bold' },
         todoDescription: { marginBottom: 0 },
         button: { backgroundColor: 'black', color: 'white', outline: 'none', fontSize: 18, padding: '12px 0px' },
-        buttondel: { backgroundColor: 'black', color: 'white', float: 'right' },
-        hr: { width: '100%', height: 1 }
+        buttondel: { backgroundColor: 'black', color: 'white', float: 'right' }
     };
 
     useEffect(() => {
@@ -68,7 +67,7 @@ function AdminHome() {
     return (
         <>
             <header>
-                <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark">Open Nav</h6></MDBBtn></div>
+                <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark fw-bold text-shadow4">Open Nav</h6></MDBBtn></div>
                 <div className="signout-button fixed-top"><AmplifySignOut /></div>
                 <MDBCollapse show={showShow}>
                     <section className="sidenav-width-border bg-blue fixed-top">
@@ -79,8 +78,8 @@ function AdminHome() {
                             height="61"
                             alt="company logo"
                         />
-                        <h4 className="text-dark fw-bold">Admin Dashboard</h4>
-                        <MDBBtn className="pos-nav-toggle text-dark" onClick={toggleShow}><h6>Close Nav</h6></MDBBtn>
+                        <h4 className="text-dark fw-bold text-shadow4">Admin Dashboard</h4>
+                        <MDBBtn className="pos-nav-toggle text-dark fw-bold text-shadow4" onClick={toggleShow}><h6>Close Nav</h6></MDBBtn>
                         <Link to="">
                             <MDBBtn className="text-dark public-button" color="warning">
                                 <container>Return to Public Site</container>
@@ -89,19 +88,19 @@ function AdminHome() {
                         <Nav className="flex-column" variant="tabs" activeKey="1">
                             <Nav.Item>
                                 <Nav.Link eventKey="1">
-                                    <Link to="/adminHome"><h6 className="text-dark">Home</h6></Link>
+                                    <Link to="/adminHome"><h6 className="text-dark font-weight-bold text-shadow4">Home</h6></Link>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="2">
                                     <Link to="/adminTraffic">
-                                        <h6 className="text-dark">Traffic</h6>
+                                        <h6 className="text-dark font-weight-bold text-shadow4">Traffic</h6>
                                     </Link>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="3">
-                                    <Link to="/adminSEO"><h6 className="text-dark">SEO</h6></Link>
+                                    <Link to="/adminSEO"><h6 className="text-dark font-weight-bold text-shadow4">SEO</h6></Link>
                                 </Nav.Link>
                             </Nav.Item>
                         </Nav>
@@ -109,7 +108,7 @@ function AdminHome() {
                 </MDBCollapse>
             </header>
             <div style={styles.container}>
-                <h2>Princigration Todos</h2>
+                <h2 class="text-shadow3">Princigration Todos</h2>
                 <input
                     onChange={event => setInput('name', event.target.value)}
                     style={styles.input}

@@ -12,7 +12,7 @@ function AdminTraffic() {
     return (
         <>
             <header>
-                <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark">Open Nav</h6></MDBBtn></div>
+                <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark fw-bold text-shadow4">Open Nav</h6></MDBBtn></div>
                 <div className="signout-button fixed-top"><AmplifySignOut /></div>
                 <MDBCollapse show={showShow}>
                     <section className="sidenav-width-border bg-blue fixed-top">
@@ -23,8 +23,8 @@ function AdminTraffic() {
                             height="61"
                             alt="company logo"
                         />
-                        <h4 className="text-dark fw-bold">Admin Dashboard</h4>
-                        <MDBBtn className="pos-nav-toggle text-dark" onClick={toggleShow}><h6>Close Nav</h6></MDBBtn>
+                        <h4 className="text-dark fw-bold text-shadow4">Admin Dashboard</h4>
+                        <MDBBtn className="pos-nav-toggle text-dark fw-bold text-shadow4" onClick={toggleShow}><h6>Close Nav</h6></MDBBtn>
                         <Link to="">
                             <MDBBtn className="text-dark public-button" color="warning">
                                 Return to Public Site
@@ -33,19 +33,19 @@ function AdminTraffic() {
                         <Nav className="flex-column" variant="tabs" activeKey="2">
                             <Nav.Item>
                                 <Nav.Link eventKey="1">
-                                    <Link to="/adminHome"><h6 className="text-dark">Home</h6></Link>
+                                    <Link to="/adminHome"><h6 className="text-dark font-weight-bold text-shadow4">Home</h6></Link>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="2">
                                     <Link to="/adminTraffic">
-                                        <h6 className="text-dark">Traffic</h6>
+                                        <h6 className="text-dark font-weight-bold text-shadow4">Traffic</h6>
                                     </Link>
                                 </Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link eventKey="3">
-                                    <Link to="/adminSEO"><h6 className="text-dark">SEO</h6></Link>
+                                    <Link to="/adminSEO"><h6 className="text-dark font-weight-bold text-shadow4">SEO</h6></Link>
                                 </Nav.Link>
                             </Nav.Item>
                         </Nav>
