@@ -5,8 +5,8 @@ function Contact() {
     return (
         <>
             {/* contact list */}
-            <hr className="my-5" />
-            <section className="text-center" id={"contact"}>
+            <hr className="my-5" id="contact"/>
+            <section className="text-center">
                 <h3 className="mb-5 font-weight-bold green-font text-shadow2">Contact Us</h3>
                 <ul className="list-unstyled">
                     <li>

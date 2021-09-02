@@ -19,6 +19,7 @@ function AdminTraffic() {
                 {/* custom nav */}
                 <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark fw-bold text-shadow4">Open Nav</h6></MDBBtn></div>
                 <div className="signout-button fixed-top"><AmplifySignOut /></div>
+                {/* custom nav sidebar */}
                 <MDBCollapse show={showShow}>
                     <section className="sidenav-width-border bg-blue fixed-top">
                         <img

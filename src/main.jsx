@@ -6,7 +6,7 @@ function Main() {
         <>
             <main>
                 {/* company description */}
-                <div className="container my-5" id={"about"}>
+                <div className="container my-5">
                     <section className="text-center">
                         <h3 className="mb-5 font-weight-bold green-font text-shadow2">About Princigration</h3>
                         <p className="text-center mb-5 mx-auto w-responsive green-font">

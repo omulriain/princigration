@@ -6,8 +6,8 @@ function Experience() {
     return (
         <>
             {/* experience list with progress bars */}
-            <hr className="my-5" />
-            <section id={"experience"}>
+            <hr className="my-5" id="experience"/>
+            <section>
                 <h3 className="mb-5 text-center font-weight-bold green-font text-shadow2">Experience</h3>
                 <div className="row px-5 text-center">
                     <div className="col-md-4 mb-4 mb-md-0 basic-padding-top">

@@ -12,8 +12,8 @@ function Header() {
     // render component
     return (
         <>
-            {/* MDB nav */}
             <header>
+                {/* MDB nav */}
                 <MDBCollapse show={showShow}>
                     <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-green">
                         <div className="container">
@@ -78,6 +78,7 @@ function Header() {
                             </div>
                         </div>
                     </div>
+                    <div id="about"></div>
                 </section>
             </header>
         </>

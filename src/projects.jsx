@@ -5,8 +5,8 @@ function Projects() {
     return (
         <>
             {/* project cards */}
-            <hr className="my-5" />
-            <section id="projects">
+            <hr className="my-5" id="projects"/>
+            <section>
                 <h3 className="text-center mb-5 font-weight-bold green-font text-shadow2">Recent Projects</h3>
                 <p className="text-center mb-5 mx-auto w-responsive green-font">
                     Princigration has a coveted collection of top-tier projects implementing our Principles, while achieving real world success.

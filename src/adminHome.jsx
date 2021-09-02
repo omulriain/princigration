@@ -14,7 +14,7 @@ function AdminHome() {
     // used to toggle visibility state
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
-    // used to set intial input state of todo app
+    // used to set intial input state of todo app form
     const initialState = { name: '', description: '' };
     const [formState, setFormState] = useState(initialState);
     // used to store todos
@@ -80,6 +80,7 @@ function AdminHome() {
                 {/* custom nav */}
                 <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark fw-bold text-shadow4">Open Nav</h6></MDBBtn></div>
                 <div className="signout-button fixed-top"><AmplifySignOut /></div>
+                {/* custom nav sidebar */}
                 <MDBCollapse show={showShow}>
                     <section className="sidenav-width-border bg-blue fixed-top">
                         <img
