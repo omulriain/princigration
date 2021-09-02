@@ -1,5 +1,6 @@
 import React from "react";
 
+// component
 function Main() {
     return (
         <>

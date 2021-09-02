@@ -7,13 +7,19 @@ import { API, graphqlOperation } from 'aws-amplify';
 import { createTodo, deleteTodo } from './graphql/mutations';
 import { listTodos } from './graphql/queries';
 
+// component
 function AdminHome() {
     // constants
+
+    // used to toggle visibility state
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
+    // used to set intial input state of todo app
     const initialState = { name: '', description: '' };
     const [formState, setFormState] = useState(initialState);
+    // used to store todos
     const [todos, setTodos] = useState([]);
+    // todo app styles
     const styles = {
         container: { width: 500, marginTop: 75, marginLeft: 'auto', marginRight: 'auto', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', padding: 20 },
         todo: { marginBottom: 15, marginTop: 5 },
@@ -26,6 +32,8 @@ function AdminHome() {
     };
 
     // functions
+
+    // scrolls to top of page on load
     useEffect(() => {
         fetchTodos()
     }, [])

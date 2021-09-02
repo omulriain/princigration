@@ -4,8 +4,11 @@ import { MDBCollapse, MDBBtn, MDBChart } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
 import { AmplifySignOut, withAuthenticator } from "@aws-amplify/ui-react";
 
+// component
 function AdminSEO() {
     // constants
+
+    
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
 
+// component
 function People() {
     return (
         <>

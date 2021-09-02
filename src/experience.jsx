@@ -1,5 +1,6 @@
 import React from "react";
 
+// component
 function Experience() {
     // render component
     return (

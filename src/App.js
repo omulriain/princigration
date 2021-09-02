@@ -11,6 +11,7 @@ import AdminHome from "./adminHome";
 import AdminTraffic from "./adminTraffic";
 import AdminSEO from "./adminSEO";
 
+// returns routes to components
 function App() {
   return (
     <>

@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MDBCollapse } from 'mdb-react-ui-kit';
 
+// component
 function Header() {
     // constants
+
+    // used to toggle visibility state
     const [showShow, setShowShow] = useState(true);
     const toggleShow = () => setShowShow(!showShow);
     // render component
