@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 
 function AdminLogin() {
+    // render component
     return (
         <>
+            {/* login form */}
             <section className="ps-5 pe-5">
                 <h1 className="basic-padding-top">Princigration Administrator Login</h1>
                 <Form className="basic-padding-top">

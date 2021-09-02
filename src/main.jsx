@@ -4,6 +4,7 @@ function Main() {
     return (
         <>
             <main>
+                {/* company description */}
                 <div className="container my-5" id={"about"}>
                     <section className="text-center">
                         <h3 className="mb-5 font-weight-bold green-font text-shadow2">About Princigration</h3>
@@ -14,6 +15,7 @@ function Main() {
                             Our process focuses on your core Principles.
                             They are first class citizens in the software implementation allowing for measuring, tracking and improving the reasons you are in business in the first place.
                         </p>
+                        {/* company motto cards */}
                         <div className="row">
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div className="card hover-shadow-light">

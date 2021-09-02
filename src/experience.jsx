@@ -1,8 +1,10 @@
 import React from "react";
 
 function Experience() {
+    // render component
     return (
         <>
+            {/* experience list with progress bars */}
             <hr className="my-5" />
             <section id={"experience"}>
                 <h3 className="mb-5 text-center font-weight-bold green-font text-shadow2">Experience</h3>

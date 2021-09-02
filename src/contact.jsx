@@ -3,6 +3,7 @@ import React from "react";
 function Contact() {
     return (
         <>
+            {/* contact list */}
             <hr className="my-5" />
             <section className="text-center" id={"contact"}>
                 <h3 className="mb-5 font-weight-bold green-font text-shadow2">Contact Us</h3>

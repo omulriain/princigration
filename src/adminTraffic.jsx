@@ -5,13 +5,15 @@ import { Link } from "react-router-dom";
 import { AmplifySignOut, withAuthenticator } from "@aws-amplify/ui-react";
 
 function AdminTraffic() {
-
+    // constants
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
 
+    // render component
     return (
         <>
             <header>
+                {/* custom nav */}
                 <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark fw-bold text-shadow4">Open Nav</h6></MDBBtn></div>
                 <div className="signout-button fixed-top"><AmplifySignOut /></div>
                 <MDBCollapse show={showShow}>
@@ -52,14 +54,15 @@ function AdminTraffic() {
                     </section>
                 </MDBCollapse>
             </header>
+            {/* traffic list */}
             <main className="basic-margin-top">
                 <div class="container text-center">
                     <h1 class="h3 text-center py-5 mb-0 font-weight-bold text-shadow3">Traffic Dashboard</h1>
                     <section class="mb-4">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-md-6 mb-4 mb-md-0">
-                            <div class="card">
-                                <div class="card-body p-4">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-6 mb-4 mb-md-0">
+                                <div class="card">
+                                    <div class="card-body p-4">
                                         <select class="select">
                                             <option value="1">Today</option>
                                             <option value="2">Yesterday</option>
@@ -113,6 +116,7 @@ function AdminTraffic() {
                                 </div>
                             </div>
                         </div>
+                        {/* traffic graphs */}
                         <div class="row d-flex justify-content-center">
                             <div class="col-lg-6 mb-4">
                                 <div class="card">

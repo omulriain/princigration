@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import { MDBCollapse } from 'mdb-react-ui-kit';
 
 function Header() {
-
+    // constants
     const [showShow, setShowShow] = useState(true);
     const toggleShow = () => setShowShow(!showShow);
-
+    // render component
     return (
         <>
+            {/* MDB nav */}
             <header>
                 <MDBCollapse show={showShow}>
                     <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-green">
@@ -52,10 +53,13 @@ function Header() {
                 <MDBCollapse show={!showShow}>
                     <i class="fas fa-toggle-off px-5 pt-2 fa-3x fixed-top" onClick={toggleShow}></i>
                 </MDBCollapse>
+                {/* header landing page */}
                 <section>
                     <div id="home" className="text-center bg-image vh-100"
-                        style={{ backgroundImage: 'url(background_photo.webp)',
-                        height: "1100px" }}>
+                        style={{
+                            backgroundImage: 'url(background_photo.webp)',
+                            height: "1100px"
+                        }}>
                         <div className="mask" style={{ backgroundColor: "rgba(230, 255, 230, 0.65)" }}>
                             <div className="d-flex justify-content-center align-items-center h-100 mt-4">
                                 <div className="">

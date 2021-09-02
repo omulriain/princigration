@@ -4,12 +4,14 @@ import { Accordion, Card, Button } from "react-bootstrap";
 function People() {
     return (
         <>
+            {/* people opening */}
             <hr className="my-5" />
             <section className="text-center" id="people">
                 <h3 className="mb-5 font-weight-bold green-font text-shadow2">People</h3>
                 <p className="text-center mb-5 mx-auto w-responsive green-font">
                     Princigration is a team of dedicated and professional developers having the technical skills to suit any of your needs.
                 </p>
+                {/* people accordion */}
                 <Accordion className="pb-3">
                     <Card className="green-font">
                         <Card.Header>

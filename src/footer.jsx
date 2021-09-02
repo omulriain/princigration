@@ -1,8 +1,10 @@
 import React from "react";
 
 function Footer() {
+    // render component
     return (
         <>
+            {/* email banner */}
             <section>
                 <div style={{ backgroundColor: "green" }}>
                     <div className="d-flex align-items-center justify-content-center h-100 py-5">

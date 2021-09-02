@@ -3,6 +3,7 @@ import React from "react";
 function Projects() {
     return (
         <>
+            {/* project cards */}
             <hr className="my-5" />
             <section id="projects">
                 <h3 className="text-center mb-5 font-weight-bold green-font text-shadow2">Recent Projects</h3>

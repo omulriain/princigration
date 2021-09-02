@@ -8,7 +8,7 @@ import { createTodo, deleteTodo } from './graphql/mutations';
 import { listTodos } from './graphql/queries';
 
 function AdminHome() {
-
+    // constants
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
     const initialState = { name: '', description: '' };
@@ -25,6 +25,7 @@ function AdminHome() {
         buttondel: { backgroundColor: 'black', color: 'white', float: 'right' }
     };
 
+    // functions
     useEffect(() => {
         fetchTodos()
     }, [])
@@ -64,9 +65,11 @@ function AdminHome() {
         }
     }
 
+    // render component
     return (
         <>
             <header>
+                {/* custom nav */}
                 <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark fw-bold text-shadow4">Open Nav</h6></MDBBtn></div>
                 <div className="signout-button fixed-top"><AmplifySignOut /></div>
                 <MDBCollapse show={showShow}>
@@ -107,6 +110,7 @@ function AdminHome() {
                     </section>
                 </MDBCollapse>
             </header>
+            {/* todo app */}
             <div class="container2" style={styles.container}>
                 <h2 class="text-shadow3">Princigration Todos</h2>
                 <input
