@@ -59,19 +59,19 @@ function Experience() {
                         <p className="font-weight-bold pt-4 mt-3 mb-2">Material Design</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
-                                style={{ backgroundColor: "#73F843", width: "83%" }}
+                                style={{ backgroundColor: "#73F843", width: "90%" }}
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p className="font-weight-bold pt-4 mt-3 mb-2">HTML5</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
-                                style={{ backgroundColor: "#73F843", width: "89%" }}
+                                style={{ backgroundColor: "#73F843", width: "91%" }}
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p className="font-weight-bold pt-4 mt-3 mb-2">Bootstrap</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
-                                style={{ backgroundColor: "#73F843", width: "83%" }}
+                                style={{ backgroundColor: "#73F843", width: "90%" }}
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ function Experience() {
                         <p className="font-weight-bold pt-4 mt-3 mb-2">Amazon Web Services</p>
                         <div className="progress">
                             <div className="progress-bar" role="progressbar"
-                                style={{ backgroundColor: "#73F843", width: "88%" }}
+                                style={{ backgroundColor: "#73F843", width: "91%" }}
                                 aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 
                         </div>

@@ -29,22 +29,22 @@ function Header() {
                                 </a>
                                 <ul className="navbar-nav me-auto text-shadow">
                                     <li className="nav-item">
-                                        <a className="nav-link active" href="#home">Home</a>
+                                        <a className="nav-link active link-custom" href="#home">Home</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link active" href="#about">About</a>
+                                        <a className="nav-link active link-custom" href="#about">About</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link active" href="#experience">Experience</a>
+                                        <a className="nav-link active link-custom" href="#experience">Experience</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link active" href="#projects">Projects</a>
+                                        <a className="nav-link active link-custom" href="#projects">Projects</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link active" href="#contact">Contact</a>
+                                        <a className="nav-link active link-custom" href="#contact">Contact</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link active" href="#people">People</a>
+                                        <a className="nav-link active link-custom" href="#people">People</a>
                                     </li>
                                 </ul>
                             </div>
@@ -68,7 +68,8 @@ function Header() {
                                 <div className="">
                                     <h1 className="display-2 mb-4 fw-bold green-font text-shadow"><strong>Princigration</strong></h1>
                                     <h5 className="text-uppercase mb-5">
-                                        <mark style={{ backgroundColor: "rgb(115,248,67)" }}>Principle &#8747; Integration
+                                        <mark style={{ backgroundColor: "rgb(115,248,67)", border: "1px solid rgb(115,248,67)", borderRadius: "5px" }}>
+                                            Principle &#8747; Integration
                                         </mark>
                                     </h5>
                                     <a href="/#about" className="btn btn-floating btn-lg btn-dark blink-anim"> <i
