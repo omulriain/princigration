@@ -8,7 +8,7 @@ import { AmplifySignOut, withAuthenticator } from "@aws-amplify/ui-react";
 function AdminSEO() {
     // constants
 
-    
+    // used to toggle visibility state
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
 
