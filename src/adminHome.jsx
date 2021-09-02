@@ -29,11 +29,11 @@ function AdminHome() {
     useEffect(() => {
         fetchTodos()
     }, [])
-
+    // sets input values from form
     function setInput(key, value) {
         setFormState({ ...formState, [key]: value })
     }
-
+    // lists todos from database
     async function fetchTodos() {
         try {
             const todoData = await API.graphql(graphqlOperation(listTodos))
@@ -41,7 +41,7 @@ function AdminHome() {
             setTodos(todos)
         } catch (err) { console.log('error fetching todos') }
     }
-
+    // creates a todo
     async function addTodo() {
         try {
             if (!formState.name || !formState.description) return
@@ -54,7 +54,7 @@ function AdminHome() {
             console.log('error creating todo:', err)
         }
     }
-
+    // deletes a todo
     async function removeTodo({ id }) {
         try {
             const newTodosArray = todos.filter(todo => todo.id !== id)
