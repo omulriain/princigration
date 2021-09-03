@@ -10,6 +10,7 @@ import Footer from "./footer";
 import AdminHome from "./adminHome";
 import AdminTraffic from "./adminTraffic";
 import AdminSEO from "./adminSEO";
+import AdminLogin from './adminLogin';
 
 // returns routes to components
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Footer />
           </div>
         } />
+        <Route exact path="/adminLogin" component={AdminLogin} />
         <Route exact path="/adminHome" component={AdminHome} />
         <Route exact path="/adminTraffic" component={AdminTraffic} />
         <Route exact path="/adminSEO" component={AdminSEO} />

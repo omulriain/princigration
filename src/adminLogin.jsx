@@ -26,9 +26,12 @@ function AdminLogin() {
                         <Form.Check className="pt-2" type="checkbox" label="I agree that I am a Princigiration administrator." />
                     </Form.Group>
                     <div className="pt-2">
-                        <Button variant="success" type="submit">
-                            Submit
-                        </Button>
+                        {/* WARNING: temporary unauthorized admin access is granted via submit button without backend authorization process */}
+                        <Link to="/adminHome">
+                            <Button variant="success" type="submit">
+                                Submit
+                            </Button>
+                        </Link>
                     </div>
                     <div className="pt-2">
                         <Link to="">

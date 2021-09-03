@@ -49,7 +49,7 @@ function Header() {
                                 </ul>
                             </div>
                         </div>
-                        <Link to="/adminHome"><button type="button" class="btn btn-success btn-lg mx-3 text-shadow">Admin</button></Link>
+                        <Link to="/adminLogin"><button type="button" class="btn btn-success btn-lg mx-3 text-shadow">Admin</button></Link>
                         <i class="fas fa-toggle-on px-5 fa-3x hide-toggle-nav" onClick={toggleShow}></i>
                     </nav>
                 </MDBCollapse>
