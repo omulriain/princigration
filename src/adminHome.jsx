@@ -67,7 +67,7 @@ function AdminHome() {
                     </section>
                 </MDBCollapse>
             </header>
-            {/* todo app */}
+            {/* todo app (frontend/UI only) */}
             <div class="container2" style={styles.container}>
                 <h2 class="text-shadow3">Princigration Todos</h2>
                 <input
