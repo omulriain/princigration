@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
 import { MDBCollapse, MDBBtn, MDBChart } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
-import { AmplifySignOut, withAuthenticator } from "@aws-amplify/ui-react";
 
 // component
 function AdminTraffic() {
@@ -18,7 +17,6 @@ function AdminTraffic() {
             <header>
                 {/* custom nav */}
                 <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark fw-bold text-shadow4">Open Nav</h6></MDBBtn></div>
-                <div className="signout-button fixed-top"><AmplifySignOut /></div>
                 {/* custom nav sidebar */}
                 <MDBCollapse show={showShow}>
                     <section className="sidenav-width-border bg-blue fixed-top">
@@ -179,4 +177,4 @@ function AdminTraffic() {
     );
 }
 
-export default withAuthenticator(AdminTraffic);
+export default AdminTraffic;

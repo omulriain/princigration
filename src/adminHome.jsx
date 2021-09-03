@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
 import { MDBCollapse, MDBBtn } from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
-import { AmplifySignOut, withAuthenticator } from "@aws-amplify/ui-react";
-import { API, graphqlOperation } from 'aws-amplify';
-import { createTodo, deleteTodo } from './graphql/mutations';
-import { listTodos } from './graphql/queries';
 
 // component
 function AdminHome() {
@@ -14,11 +10,6 @@ function AdminHome() {
     // used to toggle visibility state
     const [showShow, setShowShow] = useState(false);
     const toggleShow = () => setShowShow(!showShow);
-    // used to set intial input state of todo app form
-    const initialState = { name: '', description: '' };
-    const [formState, setFormState] = useState(initialState);
-    // used to store todos
-    const [todos, setTodos] = useState([]);
     // todo app styles
     const styles = {
         container: { width: 500, marginTop: 75, marginLeft: 'auto', marginRight: 'auto', display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', padding: 20 },
@@ -31,55 +22,12 @@ function AdminHome() {
         buttondel: { backgroundColor: 'black', color: 'white', float: 'right' }
     };
 
-    // functions
-
-    // scrolls to top of page on load
-    useEffect(() => {
-        fetchTodos()
-    }, [])
-    // sets input values from form
-    function setInput(key, value) {
-        setFormState({ ...formState, [key]: value })
-    }
-    // lists todos from database
-    async function fetchTodos() {
-        try {
-            const todoData = await API.graphql(graphqlOperation(listTodos))
-            const todos = todoData.data.listTodos.items
-            setTodos(todos)
-        } catch (err) { console.log('error fetching todos') }
-    }
-    // creates a todo
-    async function addTodo() {
-        try {
-            if (!formState.name || !formState.description) return
-            const todo = { ...formState }
-            setTodos([...todos, todo])
-            setFormState(initialState)
-            await API.graphql(graphqlOperation(createTodo, { input: todo }))
-            fetchTodos()
-        } catch (err) {
-            console.log('error creating todo:', err)
-        }
-    }
-    // deletes a todo
-    async function removeTodo({ id }) {
-        try {
-            const newTodosArray = todos.filter(todo => todo.id !== id)
-            setTodos(newTodosArray)
-            await API.graphql(graphqlOperation(deleteTodo, { input: { id } }))
-        } catch (err) {
-            console.log('error deleting todo:', err)
-        }
-    }
-
     // render component
     return (
         <>
             <header>
                 {/* custom nav */}
                 <div className="toggle-nav-box fixed-top"><MDBBtn className="pos-nav-toggle-2" onClick={toggleShow}><h6 className="text-dark fw-bold text-shadow4">Open Nav</h6></MDBBtn></div>
-                <div className="signout-button fixed-top"><AmplifySignOut /></div>
                 {/* custom nav sidebar */}
                 <MDBCollapse show={showShow}>
                     <section className="sidenav-width-border bg-blue fixed-top">
@@ -123,25 +71,21 @@ function AdminHome() {
             <div class="container2" style={styles.container}>
                 <h2 class="text-shadow3">Princigration Todos</h2>
                 <input
-                    onChange={event => setInput('name', event.target.value)}
                     style={styles.input}
-                    value={formState.name}
                     placeholder="Name"
                 />
                 <input
-                    onChange={event => setInput('description', event.target.value)}
                     style={styles.input}
-                    value={formState.description}
                     placeholder="Description"
                 />
-                <button style={styles.button} onClick={addTodo}>Create Todo</button>
+                <button style={styles.button}>Create Todo</button>
                 {
-                    todos.map((todo, index) => (
-                        <div key={todo.id ? todo.id : index} style={styles.todo}>
-                            <button style={styles.buttondel} onClick={() => removeTodo(todo)}>Delete</button>
-                            <p style={styles.todoID}>Todo ID: {todo.id}</p>
-                            <p style={styles.todoName}>{todo.name}</p>
-                            <p style={styles.todoDescription}>{todo.description}</p>
+                    (() => (
+                        <div style={styles.todo}>
+                            <button style={styles.buttondel}>Delete</button>
+                            <p style={styles.todoID}>Todo ID: </p>
+                            <p style={styles.todoName}></p>
+                            <p style={styles.todoDescription}></p>
                         </div>
                     ))
                 }
@@ -150,4 +94,4 @@ function AdminHome() {
     );
 }
 
-export default withAuthenticator(AdminHome);
+export default AdminHome;

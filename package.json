@@ -3,11 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@aws-amplify/ui-react": "^1.2.5",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "aws-amplify": "^4.1.3",
     "bootstrap": "^4.6.0",
     "mdb-react-ui-kit": "git+https://oauth2:Gixd3K9GEf44mc58MT6g@git.mdbootstrap.com/mdb/react/mdb5/prd/mdb5-react-ui-kit-pro-essential.git",
     "react": "^17.0.2",

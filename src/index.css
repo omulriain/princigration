@@ -116,11 +116,6 @@ body {
   margin-bottom: 10px;
 }
 
-.signout-button {
-  margin: 10px 10px 50% 50%;
-  box-shadow: 1px 1px 5px darkslategray;
-}
-
 .admin-logo {
   float: left;
   padding-left: 5px;
