@@ -1,12 +1,14 @@
 import React from "react";
 
+// component
 function Main() {
     return (
         <>
             <main>
-                <div className="container my-5" id={"about_princigration"}>
+                {/* company description */}
+                <div className="container my-5">
                     <section className="text-center">
-                        <h3 className="mb-5 green-font">About Princigration</h3>
+                        <h3 className="mb-5 font-weight-bold green-font text-shadow2">About Princigration</h3>
                         <p className="text-center mb-5 mx-auto w-responsive green-font">
                             We believe that Principles are important. They have to be measurable and visible.
                             We build them into your business systems.
@@ -14,6 +16,7 @@ function Main() {
                             Our process focuses on your core Principles.
                             They are first class citizens in the software implementation allowing for measuring, tracking and improving the reasons you are in business in the first place.
                         </p>
+                        {/* company motto cards */}
                         <div className="row">
                             <div className="col-md-4 mb-4 mb-md-0">
                                 <div className="card hover-shadow-light">
