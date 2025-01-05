@@ -1,12 +1,10 @@
 import React, { useState } from "react";
-// Unused while admin section is under development
-// import { Link } from "react-router-dom";
 import { MDBCollapse } from "mdb-react-ui-kit";
+
+const base = process.env.PUBLIC_URL;
 
 // component
 function Header() {
-  // constants
-
   // used to toggle visibility state
   const [showShow, setShowShow] = useState(true);
   const toggleShow = () => setShowShow(!showShow);
@@ -25,7 +23,7 @@ function Header() {
                 <a className="navbar-brand mt-2 mt-lg-0" href="#home">
                   <img
                     className="png-shadow"
-                    src="princigration logo emerald green Vfinal2 no back.png"
+                    src={`${base}/princigration logo emerald green Vfinal2 no back.png`}
                     width="122"
                     height="75"
                     alt="company logo"
@@ -86,7 +84,7 @@ function Header() {
             id="home"
             className="text-center bg-image vh-100"
             style={{
-              backgroundImage: "url(background_photo.webp)",
+              backgroundImage: `url(${base}/background_photo.webp)`,
               height: "1100px",
             }}
           >
@@ -111,7 +109,7 @@ function Header() {
                     </mark>
                   </h5>
                   <a
-                    href="/#about"
+                    href="#about"
                     className="btn btn-floating btn-lg btn-dark blink-anim"
                   >
                     <i className="fas fa-angle-down" aria-hidden="true"></i>

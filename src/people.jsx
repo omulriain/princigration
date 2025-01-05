@@ -1,6 +1,8 @@
 import React from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
 
+const base = process.env.PUBLIC_URL;
+
 // component
 function People() {
   return (
@@ -36,7 +38,7 @@ function People() {
                   <li className="list-group-item">
                     <img
                       className="rounded-4 border border-success mb-3"
-                      src="13_lb_striper.webp"
+                      src={`${base}/13_lb_striper.webp`}
                       width="190"
                       height="253"
                       alt="john ryan"
@@ -87,7 +89,7 @@ function People() {
                   <li className="list-group-item">
                     <img
                       className="rounded-4 border border-success mb-3"
-                      src="jesse_sites.webp"
+                      src={`${base}/jesse_sites.webp`}
                       width="200px"
                       height="200px"
                       alt="jesse sites"

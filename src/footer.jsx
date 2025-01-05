@@ -1,5 +1,7 @@
 import React from "react";
 
+const base = process.env.PUBLIC_URL;
+
 // component
 function Footer() {
   // render component
@@ -18,7 +20,7 @@ function Footer() {
               <h5 className="mb-0">contact@princigration.com</h5>
               <img
                 className="png-shadow"
-                src="princigration logo emerald green Vfinal2 no back.png"
+                src={`${base}/princigration logo emerald green Vfinal2 no back.png`}
                 width="122"
                 height="75"
                 alt="company logo"

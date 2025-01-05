@@ -3,10 +3,10 @@ import { Nav } from "react-bootstrap";
 import { MDBCollapse, MDBBtn } from "mdb-react-ui-kit";
 import { Link } from "react-router-dom";
 
+const base = process.env.PUBLIC_URL;
+
 // component
 function AdminSEO() {
-  // constants
-
   // used to toggle visibility state
   const [showShow, setShowShow] = useState(false);
   const toggleShow = () => setShowShow(!showShow);
@@ -26,7 +26,7 @@ function AdminSEO() {
           <section className="sidenav-width-border bg-blue fixed-top">
             <img
               className="admin-logo"
-              src="princigration logo sapphire blue Vfinal2 no back.png"
+              src={`${base}/princigration logo sapphire blue Vfinal2 no back.png`}
               width="100"
               height="61"
               alt="company logo"
