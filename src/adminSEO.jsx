@@ -31,7 +31,9 @@ function AdminSEO() {
               height="61"
               alt="company logo"
             />
-            <h4 className="text-dark fw-bold text-shadow4">Admin Dashboard</h4>
+            <h4 className="text-dark fw-bold text-shadow4">
+              Admin Dashboard - DEMO
+            </h4>
             <MDBBtn
               className="pos-nav-toggle text-dark font-weight-bold text-shadow4"
               onClick={toggleShow}
@@ -78,7 +80,7 @@ function AdminSEO() {
       {/* SEO List */}
       <div class="container" style={{ marginTop: "58px" }}>
         <h1 class="h3 text-center py-5 mb-0 font-weight-bold text-shadow3">
-          SEO Dashboard
+          SEO Dashboard - DEMO
         </h1>
         <section>
           <div class="row d-flex justify-content-center">
@@ -149,52 +151,16 @@ function AdminSEO() {
                   </div>
                 </div>
               </div>
-              {/* SEO graphs */}
+              {/* SEO graphs section */}
               <div class="row">
                 <div class="col-lg-6 mb-4">
                   <div class="card">
-                    <div class="card-body">
-                      {/* <MDBChart
-                                                type='pie'
-                                                data={{
-                                                    labels: ['Desktop', 'Mobile', 'Tablet'],
-                                                    datasets: [
-                                                        {
-                                                            label: 'Devices',
-                                                            data: [2112, 2343, 2545],
-                                                            backgroundColor: [
-                                                                'rgba(63, 81, 181, 0.5)',
-                                                                'rgba(77, 182, 172, 0.5)',
-                                                                'rgba(66, 133, 244, 0.5)'
-                                                            ],
-                                                        },
-                                                    ],
-                                                }}
-                                            /> */}
-                    </div>
+                    <div class="card-body"></div>
                   </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="card">
-                    <div class="card-body">
-                      {/* <MDBChart
-                                                type='pie'
-                                                data={{
-                                                    labels: ['Desktop', 'Mobile', 'Tablet'],
-                                                    datasets: [
-                                                        {
-                                                            label: 'Devices',
-                                                            data: [2112, 2343, 2545],
-                                                            backgroundColor: [
-                                                                'rgba(63, 81, 181, 0.5)',
-                                                                'rgba(77, 182, 172, 0.5)',
-                                                                'rgba(66, 133, 244, 0.5)'
-                                                            ],
-                                                        },
-                                                    ],
-                                                }}
-                                            /> */}
-                    </div>
+                    <div class="card-body"></div>
                   </div>
                 </div>
               </div>

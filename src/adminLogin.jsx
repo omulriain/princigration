@@ -12,7 +12,7 @@ function AdminLogin() {
       <div className="d-flex justify-content-center">
         <section className="ps-5 pe-5">
           <h1 className="font-weight-bold basic-padding-top">
-            Princigration Administrator Login
+            Princigration Administrator Login - DEMO
           </h1>
           <Form className="basic-padding-top">
             <Form.Group className="w-75" controlId="formAdminLogin">

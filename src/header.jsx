@@ -68,15 +68,6 @@ function Header() {
                 </ul>
               </div>
             </div>
-            {/* Unused while admin section is under development */}
-            {/* <Link to="/adminLogin">
-              <button
-                type="button"
-                className="btn btn-success btn-lg mx-3 text-shadow"
-              >
-                Admin
-              </button>
-            </Link> */}
             <i
               className="fas fa-toggle-on px-5 fa-3x hide-toggle-nav"
               onClick={toggleShow}

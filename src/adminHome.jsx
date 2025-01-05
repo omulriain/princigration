@@ -64,7 +64,9 @@ function AdminHome() {
               height="61"
               alt="company logo"
             />
-            <h4 className="text-dark fw-bold text-shadow4">Admin Dashboard</h4>
+            <h4 className="text-dark fw-bold text-shadow4">
+              Admin Dashboard - DEMO
+            </h4>
             <MDBBtn
               className="pos-nav-toggle text-dark fw-bold text-shadow4"
               onClick={toggleShow}
@@ -110,7 +112,7 @@ function AdminHome() {
       </header>
       {/* todo app (frontend/UI only) */}
       <div class="container2" style={styles.container}>
-        <h2 class="text-shadow3">Princigration Todos</h2>
+        <h2 class="text-shadow3">Princigration Todos - DEMO</h2>
         <input style={styles.input} placeholder="Name" />
         <input style={styles.input} placeholder="Description" />
         <button style={styles.button}>Create Todo</button>
