@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/princigration/static/css/main.c563d732.css",
-    "main.js": "/princigration/static/js/main.82834e36.js",
+    "main.js": "/princigration/static/js/main.d439063c.js",
     "static/js/453.d0403c8e.chunk.js": "/princigration/static/js/453.d0403c8e.chunk.js",
     "index.html": "/princigration/index.html",
     "main.c563d732.css.map": "/princigration/static/css/main.c563d732.css.map",
-    "main.82834e36.js.map": "/princigration/static/js/main.82834e36.js.map",
+    "main.d439063c.js.map": "/princigration/static/js/main.d439063c.js.map",
     "453.d0403c8e.chunk.js.map": "/princigration/static/js/453.d0403c8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c563d732.css",
-    "static/js/main.82834e36.js"
+    "static/js/main.d439063c.js"
   ]
 }
