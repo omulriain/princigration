@@ -11,7 +11,7 @@ function Experience() {
         <h3 className="mb-5 text-center font-weight-bold green-font text-shadow2">
           Experience
         </h3>
-        <div className="row px-5 text-center">
+        <div className="row mx-1 px-5 text-center">
           <div className="col-md-4 mb-4 mb-md-0 basic-padding-top">
             <h5 className="text-uppercase mb-5 green-font">Data</h5>
             <p className="font-weight-bold pt-4 mt-3 mb-2">SQL</p>
