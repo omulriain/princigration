@@ -1,16 +1,16 @@
 import "./App.css";
 import { Route, Switch, HashRouter } from "react-router-dom";
-import Header from "./header";
-import Main from "./main";
-import Experience from "./experience";
-import Projects from "./projects";
-import Contact from "./contact";
-import People from "./people";
-import Footer from "./footer";
-import AdminHome from "./adminHome";
-import AdminTraffic from "./adminTraffic";
-import AdminSEO from "./adminSEO";
-import AdminLogin from "./adminLogin";
+import Header from "./components/Header";
+import Main from "./components/Main";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import People from "./components/People";
+import Footer from "./components/Footer";
+import AdminHome from "./components/AdminHome";
+import AdminTraffic from "./components/AdminTraffic";
+import AdminSEO from "./components/AdminSEO";
+import AdminLogin from "./components/AdminLogin";
 
 // returns routes to components
 function App() {
